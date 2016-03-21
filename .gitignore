@@ -1,0 +1,10 @@
+D2ModKit/
+steam_appid.txt
+_CommonRedist/
+!.gitignore
+!.gitattributes
+game/thirdpartlegalnotices.txt
+game/*/*
+content/*/*
+!game/dota_addons/defenders_of_radiance
+!content/dota_addons/defenders_of_radiance

@@ -1,0 +1,8 @@
+dor
+{
+	material materials/overviews/dor.vmat
+	pos_x -5120
+	pos_y 5376
+	scale 10.000
+}
+
