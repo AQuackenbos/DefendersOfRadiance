@@ -60,136 +60,79 @@
 	{
 		"round_quest_title"			"#DOTA_Holdout_Round_Kobolds_Quest_Title"
 		"round_title"				"#DOTA_Holdout_Round_Kobolds_Title"
-		"MaxGold"					"5600"
-		"BagCount"					"50"
-		"BagVariance"				"30"
-		"FixedXP"					"5500"
+		"MaxGold"					"3600"
+		"BagCount"					"72"
+		"BagVariance"				"100"
+		"FixedXP"					"3600"
 		
-		// Stage 1 ================================================
-		"UnitFodder_1a" // Duration 80s - Continues with UnitFodderGrouped_2a & 3a to 120s total
-		{
-			"NPCName"				"npc_dota_creature_kobold_tunneler"
-			"TotalUnitsToSpawn"		"64"
-			"UnitsPerSpawn"			"8"
-			"SpawnInterval"			"10"
-		}
+		// Basic ================================================
 		
-		"UnitFodder_1b" // Duration 80s - Continues with UnitFodderGrouped_2b & 3b to 120s total
+		"1L_Basic"
 		{
-			"NPCName"				"npc_dota_creature_kobold_tunneler"
-			"TotalUnitsToSpawn"		"64"
-			"UnitsPerSpawn"			"8"
-			"SpawnInterval"			"10"
-		}
-		
-		"UnitFodder_1c" // Duration 90s + 30s
-		{
-			"WaitForTime"			"30"
-			"NPCName"				"npc_dota_creature_kobold_tunneler"
-			"TotalUnitsToSpawn"		"45"
-			"UnitsPerSpawn"			"5"
-			"SpawnInterval"			"10"
-		}
-		
-		"UnitRanged_1a" // Duration 60s + 30s
-		{
-			"WaitForTime"			"30"
-			"NPCName"				"npc_dota_creature_gnoll_assassin"
+			"NPCName"				"npc_wave_1_basic"
 			"TotalUnitsToSpawn"		"20"
-			"UnitsPerSpawn"			"5"
+			"UnitsPerSpawn"			"4"
 			"SpawnInterval"			"15"
+			"SpawnerName"			"spawner_left"
+			"Waypoint"				"path_invader1_1"
 		}
 		
-		"UnitRanged_1b" // Duration 60s + 30s
+		"1R_Basic"
 		{
-			"WaitForTime"			"30"
-			"NPCName"				"npc_dota_creature_gnoll_assassin"
+			"NPCName"				"npc_wave_1_basic"
 			"TotalUnitsToSpawn"		"20"
-			"UnitsPerSpawn"			"5"
+			"UnitsPerSpawn"			"4"
 			"SpawnInterval"			"15"
+			"SpawnerName"			"spawner_right"
+			"Waypoint"				"path_invader4_1"
 		}
 		
-		// Stage 2 ================================================
-		"UnitFodderGrouped_2a" // Duration 20s
+		// Leader ================================================
+		
+		"1L_Leader"
 		{
-			"WaitForUnit"			"UnitFodder_1a"
-			"WaitForTime"			"12"
-			
-			"NPCName"				"npc_dota_creature_kobold_tunneler"
-			"TotalUnitsToSpawn"		"16"
-			"UnitsPerSpawn"			"8"
-			"SpawnInterval"			"10"
+			"GroupWithUnit"			"1L_Basic"
+			"NPCName"				"npc_wave_1_leader"
+			"TotalUnitsToSpawn"		"5"
+			"UnitsPerSpawn"			"1"
+			"SpawnInterval"			"15"
+			"SpawnerName"			"spawner_left"
+			"Waypoint"				"path_invader1_1"
 		}
 		
-		"UnitFodderGrouped_2b" // Duration 20s
+		"1R_Leader"
 		{
-			"WaitForUnit"			"UnitFodder_1b"
-			"WaitForTime"			"12"
-			
-			"NPCName"				"npc_dota_creature_kobold_tunneler"
-			"TotalUnitsToSpawn"		"16"
-			"UnitsPerSpawn"			"8"
-			"SpawnInterval"			"10"
+			"GroupWithUnit"			"1R_Basic"
+			"NPCName"				"npc_wave_1_leader"
+			"TotalUnitsToSpawn"		"5"
+			"UnitsPerSpawn"			"1"
+			"SpawnInterval"			"15"
+			"SpawnerName"			"spawner_right"
+			"Waypoint"				"path_invader4_1"
 		}
 		
-		"UnitHealer_2a"
+		// Boss ================================================
+		
+		"1L_Boss"
 		{
-			"GroupWithUnit"			"UnitFodderGrouped_2a"
+			"WaitForTime"			"60"
 			
-			"NPCName"				"npc_dota_creature_troll_healer"
+			"NPCName"				"npc_wave_1_boss"
 			"TotalUnitsToSpawn"		"1"
 			"UnitsPerSpawn"			"1"
+			"SpawnerName"			"spawner_left"
+			"Waypoint"				"path_invader1_1"
 		}
 		
-		"UnitHealer_2b"
+		"1R_Boss"
 		{
-			"GroupWithUnit"			"UnitFodderGrouped_2b"
+			"WaitForTime"			"60"
 			
-			"NPCName"				"npc_dota_creature_troll_healer"
+			"NPCName"				"npc_wave_1_boss"
 			"TotalUnitsToSpawn"		"1"
 			"UnitsPerSpawn"			"1"
-		}
-		
-		
-		// Stage 3 ================================================
-		"UnitFodderGrouped_3a" // Duration 20s
-		{
-			"WaitForUnit"			"UnitFodderGrouped_2a"
-			"WaitForTime"			"10"
-			
-			"NPCName"				"npc_dota_creature_kobold_tunneler"
-			"TotalUnitsToSpawn"		"16"
-			"UnitsPerSpawn"			"8"
-			"SpawnInterval"			"10"
-		}
-		
-		"UnitFodderGrouped_3b" // Duration 20s
-		{
-			"WaitForUnit"			"UnitFodderGrouped_2b"
-			"WaitForTime"			"10"
-			
-			"NPCName"				"npc_dota_creature_kobold_tunneler"
-			"TotalUnitsToSpawn"		"16"
-			"UnitsPerSpawn"			"8"
-			"SpawnInterval"			"10"
-		}
-		
-		"UnitHealer_3a"
-		{
-			"GroupWithUnit"			"UnitFodderGrouped_3a"
-			
-			"NPCName"				"npc_dota_creature_troll_healer"
-			"TotalUnitsToSpawn"		"1"
-			"UnitsPerSpawn"			"1"
-		}
-		
-		"UnitHealer_3b"
-		{
-			"GroupWithUnit"			"UnitFodderGrouped_3b"
-			
-			"NPCName"				"npc_dota_creature_troll_healer"
-			"TotalUnitsToSpawn"		"1"
-			"UnitsPerSpawn"			"1"
+			"SpawnerName"			"spawner_right"
+			"Waypoint"				"path_invader4_1"
 		}
 	}
 	

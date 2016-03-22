@@ -1,6 +1,161 @@
 "DOTAAbilities"
 {
 	//=================================================================================================================
+	// Enemy Wave Abilities
+	//=================================================================================================================
+	
+	//=================================================================================================================
+	// Wave 1: Leader: Health Regen Passive
+	//=================================================================================================================
+	"npc_wave_1_leader_health_aura"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"witch_doctor_voodoo_restoration"
+		
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"ModifierName"			"modifier_wave_1_health_aura"
+				"Target"
+				{
+					"Center"			"CASTER"
+					"Radius"			"%health_radius"
+					"Teams"				"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Types"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL | DOTA_UNIT_TARGET_OTHER"
+				}
+			}
+		}
+		
+		// Modifiers
+		//-------------------------------------------------------------------------------------------------------------
+		"Modifiers"
+		{
+			"fx_heal_aura"
+			{
+				"Passive"				"1"
+				"IsHidden"				"1"
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"Target"			"CASTER"
+						"EffectName"		"particles/units/heroes/hero_witchdoctor/witchdoctor_voodoo_restoration.vpcf"
+						"EffectAttachType"	"follow_origin"
+						
+						"ControlPoints"
+						{
+							"00"	"0 0 0"
+							"01"	"%health_radius 0 0"
+							"02"	"0 0 -200"
+						}
+					}
+				}
+			}
+			
+			"modifier_wave_1_health_aura"
+			{
+				"IsHidden"				"1"
+				"Passive"				"1"
+				
+				"Aura"					"wave_1_aura_health_regen"
+				"Aura_Radius"			"%health_radius"
+				"Aura_Teams"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL"
+				"Aura_ApplyToCaster"	"1"
+			}
+			
+			"wave_1_aura_health_regen"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%health_regen_amount"
+				}
+			}
+		}
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"health_radius"				"450"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"health_regen_amount"		"5.0"
+			}
+		}
+	}
+
+	
+	//=================================================================================================================
+	// Wave 1: Boss: Bloodlust
+	//=================================================================================================================
+	"npc_wave_1_boss_bloodlust"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ogre_magi_bloodlust"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+	
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"900"
+		"AbilityCastPoint"				"0.56"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"15"
+	
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"75"
+	
+		"precache"
+		{
+			"particle_folder"				"particles/units/heroes/hero_ogre_magi"
+		}
+	
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"15"
+			}
+	
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"modelscale"			"15"
+			}	
+	
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement_speed"	"15"
+			}
+	
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"50"
+			}
+		}
+	}
+	//=================================================================================================================
 	// Ability: Ancient Buddha
 	//=================================================================================================================
 	"ability_ancient_buddha"
@@ -825,101 +980,6 @@
 			{
 				"var_type"				"FIELD_FLOAT"
 				"think_time"			"2.0"
-			}
-		}
-	}
-	//=================================================================================================================
-	// Creature: Health Regen Passive
-	//=================================================================================================================
-	"creature_aura_health_regen"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"BaseClass"						"ability_datadriven"
-		"AbilityTextureName"			"witch_doctor_voodoo_restoration"
-		
-		"OnSpellStart"
-		{
-			"ApplyModifier"
-			{
-				"ModifierName"			"aura_health_regen"
-				"Target"
-				{
-					"Center"			"CASTER"
-					"Radius"			"%health_radius"
-					"Teams"				"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-					"Types"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL | DOTA_UNIT_TARGET_OTHER"
-				}
-			}
-		}
-		
-		// Modifiers
-		//-------------------------------------------------------------------------------------------------------------
-		"Modifiers"
-		{
-			"fx_heal_aura"
-			{
-				"Passive"				"1"
-				"IsHidden"				"1"
-				"OnCreated"
-				{
-					"AttachEffect"
-					{
-						"Target"			"CASTER"
-						"EffectName"		"particles/units/heroes/hero_witchdoctor/witchdoctor_voodoo_restoration.vpcf"
-						"EffectAttachType"	"follow_origin"
-						
-						"ControlPoints"
-						{
-							"00"	"0 0 0"
-							"01"	"%health_radius 0 0"
-							"02"	"0 0 -200"
-						}
-					}
-				}
-			}
-			
-			"aura_health_regen"
-			{
-				"IsHidden"				"0"
-				"Passive"				"1"
-				
-				"Aura"					"health_regen"
-				"Aura_Radius"			"%health_radius"
-				"Aura_Teams"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-				"Aura_Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL"
-				"Aura_ApplyToCaster"	"0"
-			}
-			
-			"health_regen"
-			{
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%health_regen_amount"
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%armor_buff"
-				}
-			}
-		}
-		
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"health_radius"				"450"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"health_regen_amount"		"22.0 23.0 24.0 25.0"
-			}
-			"03"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"armor_buff"				"8 12 18 22"
 			}
 		}
 	}
@@ -3373,63 +3433,6 @@
 			{
 				"var_type"			"FIELD_FLOAT"
 				"stun_duration"		"3.0"
-			}
-		}
-	}
-	"custom_ogre_magi_bloodlust"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"ogre_magi_bloodlust"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
-	
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"600"
-		"AbilityCastPoint"				"0.56"
-		
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"20"
-	
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"75"
-	
-		"precache"
-		{
-			"particle_folder"				"particles/units/heroes/hero_ogre_magi"
-		}
-	
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"duration"				"30"
-			}
-	
-			"02"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"modelscale"			"25"
-			}	
-	
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_movement_speed"	"10 12 14 16"
-			}
-	
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_attack_speed"	"20 40 60 80"
 			}
 		}
 	}

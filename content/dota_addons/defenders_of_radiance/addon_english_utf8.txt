@@ -19,11 +19,12 @@
 		"DOTA_Quest_Protect_The_Ancient_Subtext"	"Health: %quest_current_value% / %quest_target_value%"
 
 		"DOTA_Chat_TowerKilledGood"					"A tower was destroyed!"
-		"holdout_instructions_title"				"Holdout Example Addon"
-		"holdout_instructions_body"					"Welcome to the holdout example game mode!"
+		"holdout_instructions_title"				"Defenders of Radiance"
+		"holdout_instructions_body"					"Some variety of text goes here."
 
-		"addon_game_name"							"HOLDOUT EXAMPLE"
-
+		"addon_game_name"							"DEFENDERS OF RADIANCE"
+		"DOTA_GoodGuys"								"Defenders"
+		
 		"holdout_gold_col"							"GOLD COLLECTED"
 		"holdout_kills"								"KILLS"
 		"holdout_player"							"PLAYER"
@@ -51,6 +52,13 @@
 		"DOTA_Holdout_GoldBagExpired"				"%s1Gold bag expired! (%s2 total)"
 
 		// Unit Names
+		
+		//DoR
+		"npc_wave_1_basic"							"Kobold Tunneler"
+		"npc_wave_1_leader"							"Kobold Leader"
+		"npc_wave_1_boss"							"Kobold Magi"
+		
+		//Holdout
 		"npc_dota_creature_basic_zombie"			"Zombie"
 		"npc_dota_creature_basic_zombie_exploding"	"Volatile Zombie"
 		"npc_dota_creature_basic_zombie_bomb"		"Destroyer Zombie"
@@ -94,9 +102,22 @@
 		"npc_dota_creature_treant"					"Treant"
 		"npc_dota_creature_buff_witch"				"Empowering Wraith"
 		
+		//DoR Abilities
+		"DOTA_Tooltip_Ability_npc_wave_1_leader_health_aura"					"Kobold Blood"
+		"DOTA_Tooltip_ability_npc_wave_1_leader_health_aura_Description"		"Regenerates health around the caster."
+		"DOTA_Tooltip_ability_npc_wave_1_leader_health_aura_radius"				"AURA RADIUS:"
+		"DOTA_Tooltip_ability_npc_wave_1_leader_health_aura_regen_amount"		"REGEN AMOUNT:"
+		
+		"DOTA_Tooltip_aura_health_regen"										"Kobold Blood"
+		"DOTA_Tooltip_aura_health_regen_Description"							"Regenerating %MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT% HP per second."
+		
+		"DOTA_Tooltip_Ability_npc_wave_1_boss_bloodlust"						"Kobold Motivation"
+		"DOTA_Tooltip_ability_npc_wave_1_boss_bloodlust_Description"			"Inspires a friendly unit, increasing its movement speed and attack speed."
+		"DOTA_Tooltip_ability_npc_wave_1_boss_bloodlust_bonus_movement_speed"	"BONUS MOVE SPEED:"
+		"DOTA_Tooltip_ability_npc_wave_1_boss_bloodlust_bonus_attack_speed"		"BONUS ATTACK SPEED:"
+		"DOTA_Tooltip_ability_npc_wave_1_boss_bloodlust_duration"				"DURATION:"
+		
 		// Creature Ability Names
-		"DOTA_Tooltip_Ability_creature_aura_health_regen"					"Healing Aura"
-		"DOTA_Tooltip_ability_creature_aura_health_regen_Description"		"Regenerates health around the caster."
 		"DOTA_Tooltip_Ability_creature_acid_spray"							"Burst"
 		"DOTA_Tooltip_ability_creature_acid_spray_Description"				"Zombie explodes on death damaging everyone around it.  Leaves a pool of acid that damages enemies."
 		"DOTA_Tooltip_Ability_creature_summon_undead"						"Summon Zombies"
@@ -145,7 +166,6 @@
 		"DOTA_Tooltip_ability_creature_minor_chain_frost_Description"		"Releases an orb of frost that bounces between heroes."
 		"DOTA_Tooltip_modifier_holdout_gods_strength"						"Gods Strength"
 		"DOTA_Tooltip_ability_holdout_gods_strength_Description"			"Base damage increased by %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE%%%, strength increased by %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%, and cooldowns reduced when making a kill."
-		"DOTA_Tooltip_aura_health_regen"									"Healing Aura"
 		"DOTA_Tooltip_witch_buff"											"Attack Speed Bonus"
 				
 		"DOTA_Tooltip_ice_blast_slow"										"Ice Blast Slow"
