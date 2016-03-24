@@ -58,8 +58,8 @@
 		//----------------------------------------------------------------
 		"StatusHealth"				"300"		// Base health.
 		"StatusHealthRegen"			"0.0"		// Health regeneration rate.
-		"StatusMana"				"0"			// Base mana.
-		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
+		"StatusMana"				"100"			// Base mana.
+		"StatusManaRegen"			"2.0"		// Mana regeneration rate.		 
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -104,7 +104,7 @@
 	}
 	
 	//=================================================================================	
-	// Wave 1: Leader: Gnoll Assassin
+	// Wave 1: Leader: Kobold Chanter
 	//=================================================================================
 	"npc_wave_1_leader"	
 	{
@@ -119,7 +119,7 @@
 	
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"npc_wave_1_leader_health_aura"			// Ability 1
+		"Ability1"					"npc_wave_1_boss_bloodlust"			// Ability 1
 		"Ability2"					""			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4
@@ -130,7 +130,7 @@
 	
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageMin"			"35"		// Damage range min.
 		"AttackDamageMax"			"35"		// Damage range max.
 		"AttackRate"				"1.6"		// Speed of attack.
@@ -160,8 +160,8 @@
 		//----------------------------------------------------------------
 		"StatusHealth"				"550"		// Base health.
 		"StatusHealthRegen"			"3.0"		// Health regeneration rate.
-		"StatusMana"				"0"			// Base mana.
-		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
+		"StatusMana"				"200"			// Base mana.
+		"StatusManaRegen"			"3.0"		// Mana regeneration rate.		 
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -185,14 +185,25 @@
 				"Invade"
 				{
 					"Name"                          "Invade"
-					"Aggression"           			"80.0"
+					"Aggression"           			"65.0"
 					"Avoidance"                     "0.0"
-					"Support"                       "50.0"
+					"Support"                       "100.0"
 					//"RoamDistance"                "150.0"
 				}
 			}
 
 			"DefaultState"                          "Invade"
+			
+	
+			
+			"DefensiveAbilities"
+			{
+				"Ability1"				
+				{
+					"Name"				"npc_wave_1_boss_bloodlust"
+					"Buff"				"1"
+				}
+			}
 			
 			//"OffensiveAbilities"
 			//{		
@@ -240,7 +251,7 @@
 	}
 	
 	//=================================================================================
-	// Wave 1: Boss: Troll Healer
+	// Wave 1: Boss: Kobold Healer
 	//=================================================================================
 	"npc_wave_1_boss"
 	{
@@ -256,7 +267,7 @@
 		
 		// Abilities
 		//----------------------------------------------------------------
-		"Ability1"					"npc_wave_1_boss_bloodlust"			// Ability 1
+		"Ability1"					"npc_wave_1_leader_health_aura"			// Ability 1
 		"Ability2"					""			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4
@@ -297,10 +308,10 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"750"		// Base health.
+		"StatusHealth"				"900"		// Base health.
 		"StatusHealthRegen"			"5.0"		// Health regeneration rate.
 		"StatusMana"				"300"		// Base mana.
-		"StatusManaRegen"			"5.0"		// Mana regeneration rate.		 
+		"StatusManaRegen"			"1.0"		// Mana regeneration rate.		 
 		
 		// Vision
 		//----------------------------------------------------------------
@@ -338,18 +349,7 @@
 					"Name"			"Invade"
 					"Aggression"	"100.0"
 					"Avoidance"		"0.0"
-					"Support"		"65.0"
-				}
-			}
-	
-			
-			"DefensiveAbilities"
-			{
-				"Ability1"				
-				{
-					"Name"				"npc_wave_1_boss_bloodlust"
-					"Buff"				"1"
-					"UseSelfishly"		"1"
+					"Support"		"0.0"
 				}
 			}
 		}
