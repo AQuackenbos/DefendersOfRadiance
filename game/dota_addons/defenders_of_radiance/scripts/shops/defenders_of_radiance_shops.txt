@@ -2,22 +2,27 @@
 
 "dota_shops"
 {
+	//Stat Items and Actives
 	"consumables"
 	{
 		"item" 		"item_core_strength"
-		"item"		"item_steel_shield"
+		"item"		"item_core_agility"
+		"item"		"item_core_intellect"
 	}
 
+	//Offensive Starters
 	"attributes"
 	{
 	
 	}
 
+	//Defensive Starters
 	"weapons_armor"
 	{
-		
+		"item"		"item_steel_shield"
 	}
 
+	//Aura Starters
 	"misc"
 	{
 	

@@ -430,16 +430,16 @@
 		}
 	}
 	//=================================================================================================================
-	// ITEM: Intelligence Core
+	// ITEM: intellect Core
 	//=================================================================================================================
-	"item_recipe_core_intelligence_2"
+	"item_recipe_core_intellect_2"
 	{
-		"ID"					"2001"
+		"ID"					"2019"
 			// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_core_intelligence"
+		"AbilityTextureName"			"item_core_intellect"
 
 		
 		// Item Info
@@ -450,21 +450,21 @@
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
-		"ItemResult"					"item_core_intelligence_2"
+		"ItemResult"					"item_core_intellect_2"
 		"ItemRequirements"
 		{
-			"01"						"item_core_intelligence"
+			"01"						"item_core_intellect"
 		}
 	}	
 	
-	"item_recipe_core_intelligence_3"
+	"item_recipe_core_intellect_3"
 	{
-		"ID"					"2002"
+		"ID"					"2020"
 			// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_core_intelligence"
+		"AbilityTextureName"			"item_core_intellect"
 
 		
 		// Item Info
@@ -475,21 +475,21 @@
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
-		"ItemResult"					"item_core_intelligence_3"
+		"ItemResult"					"item_core_intellect_3"
 		"ItemRequirements"
 		{
-			"01"						"item_core_intelligence_2"
+			"01"						"item_core_intellect_2"
 		}
 	}
 	
-	"item_recipe_core_intelligence_4"
+	"item_recipe_core_intellect_4"
 	{
-		"ID"					"2003"
+		"ID"					"2021"
 			// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_core_intelligence"
+		"AbilityTextureName"			"item_core_intellect"
 
 		
 		// Item Info
@@ -500,21 +500,21 @@
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
-		"ItemResult"					"item_core_intelligence_4"
+		"ItemResult"					"item_core_intellect_4"
 		"ItemRequirements"
 		{
-			"01"						"item_core_intelligence_3"
+			"01"						"item_core_intellect_3"
 		}
 	}
 	
-	"item_recipe_core_intelligence_5"
+	"item_recipe_core_intellect_5"
 	{
-		"ID"					"2004"
+		"ID"					"2022"
 			// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_core_intelligence"
+		"AbilityTextureName"			"item_core_intellect"
 
 		
 		// Item Info
@@ -525,20 +525,20 @@
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
-		"ItemResult"					"item_core_intelligence_5"
+		"ItemResult"					"item_core_intellect_5"
 		"ItemRequirements"
 		{
-			"01"						"item_core_intelligence_4"
+			"01"						"item_core_intellect_4"
 		}
 	}
 	
-	"item_core_intelligence"
+	"item_core_intellect"
 	{
-		"ID"					"2000"
+		"ID"					"2023"
 		"BaseClass"				"item_datadriven"
 		
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_core_intelligence"
+		"AbilityTextureName"	"item_core_intellect"
 		"Model"							"models/props_gameplay/red_box.vmdl" 
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		
@@ -554,7 +554,7 @@
 		"ItemBaseLevel"			"1"
 		
 		"ItemShopTags"			"int"
-		"ItemAliases"			"intelligence;int;core"
+		"ItemAliases"			"intellect;int;core"
 		"ItemQuality"			"component"
 		
 		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
@@ -572,25 +572,25 @@
 		
 		"Modifiers"
 		{
-			"modifier_item_core_intelligence"
+			"modifier_item_core_intellect"
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
 				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_STATS_INTELLIGENCE_BONUS"	"%bonus_int"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_int"
 				}
 			}
 		}
 	}
 	
-	"item_core_intelligence_2"
+	"item_core_intellect_2"
 	{
-		"ID"			"2009"
+		"ID"			"2024"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_core_intelligence"
+		"AbilityTextureName"	"item_core_intellect"
 		"Model"							"models/props_gameplay/red_box.vmdl" 
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		
@@ -606,7 +606,7 @@
 		"ItemBaseLevel"			"2"
 		
 		"ItemShopTags"			"int"
-		"ItemAliases"			"intelligence;int;core"
+		"ItemAliases"			"intellect;int;core"
 		"ItemQuality"			"component"
 		
 		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
@@ -624,24 +624,24 @@
 		
 		"Modifiers"
 		{
-			"modifier_item_core_intelligence"
+			"modifier_item_core_intellect"
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
 				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_STATS_INTELLIGENCE_BONUS"	"%bonus_int"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_int"
 				}
 			}
 		}
 	}
-	"item_core_intelligence_3"
+	"item_core_intellect_3"
 	{
-		"ID"			"2010"
+		"ID"			"2025"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_core_intelligence"
+		"AbilityTextureName"	"item_core_intellect"
 		"Model"							"models/props_gameplay/red_box.vmdl" 
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		
@@ -657,7 +657,7 @@
 		"ItemBaseLevel"			"3"
 		
 		"ItemShopTags"			"int"
-		"ItemAliases"			"intelligence;int;core"
+		"ItemAliases"			"intellect;int;core"
 		"ItemQuality"			"component"
 		
 		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
@@ -675,24 +675,24 @@
 		
 		"Modifiers"
 		{
-			"modifier_item_core_intelligence"
+			"modifier_item_core_intellect"
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
 				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_STATS_INTELLIGENCE_BONUS"	"%bonus_int"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_int"
 				}
 			}
 		}
 	}
-	"item_core_intelligence_4"
+	"item_core_intellect_4"
 	{
-		"ID"			"2011"
+		"ID"			"2026"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_core_intelligence"
+		"AbilityTextureName"	"item_core_intellect"
 		"Model"							"models/props_gameplay/red_box.vmdl" 
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		
@@ -708,7 +708,7 @@
 		"ItemBaseLevel"			"4"
 		
 		"ItemShopTags"			"int"
-		"ItemAliases"			"intelligence;int;core"
+		"ItemAliases"			"intellect;int;core"
 		"ItemQuality"			"component"
 		
 		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
@@ -726,24 +726,24 @@
 		
 		"Modifiers"
 		{
-			"modifier_item_core_intelligence"
+			"modifier_item_core_intellect"
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
 				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_STATS_INTELLIGENCE_BONUS"	"%bonus_int"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_int"
 				}
 			}
 		}
 	}
-	"item_core_intelligence_5"
+	"item_core_intellect_5"
 	{
-		"ID"			"2012"
+		"ID"			"2027"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_core_intelligence"
+		"AbilityTextureName"	"item_core_intellect"
 		"Model"							"models/props_gameplay/red_box.vmdl" 
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		
@@ -759,7 +759,7 @@
 		"ItemBaseLevel"			"5"
 		
 		"ItemShopTags"			"int"
-		"ItemAliases"			"intelligence;int;core"
+		"ItemAliases"			"intellect;int;core"
 		"ItemQuality"			"component"
 		
 		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
@@ -777,14 +777,14 @@
 		
 		"Modifiers"
 		{
-			"modifier_item_core_intelligence"
+			"modifier_item_core_intellect"
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
 				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_STATS_INTELLIGENCE_BONUS"	"%bonus_int"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_int"
 				}
 			}
 		}
@@ -794,7 +794,7 @@
 	//=================================================================================================================
 	"item_recipe_core_agility_2"
 	{
-		"ID"					"2001"
+		"ID"					"2028"
 			// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
@@ -819,7 +819,7 @@
 	
 	"item_recipe_core_agility_3"
 	{
-		"ID"					"2002"
+		"ID"					"2029"
 			// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
@@ -844,7 +844,7 @@
 	
 	"item_recipe_core_agility_4"
 	{
-		"ID"					"2003"
+		"ID"					"2030"
 			// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
@@ -869,7 +869,7 @@
 	
 	"item_recipe_core_agility_5"
 	{
-		"ID"					"2004"
+		"ID"					"2031"
 			// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
@@ -894,7 +894,7 @@
 	
 	"item_core_agility"
 	{
-		"ID"					"2000"
+		"ID"					"2032"
 		"BaseClass"				"item_datadriven"
 		
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -947,7 +947,7 @@
 	
 	"item_core_agility_2"
 	{
-		"ID"			"2009"
+		"ID"			"2033"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"	"item_core_agility"
@@ -998,7 +998,7 @@
 	}
 	"item_core_agility_3"
 	{
-		"ID"			"2010"
+		"ID"			"2034"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"	"item_core_agility"
@@ -1049,7 +1049,7 @@
 	}
 	"item_core_agility_4"
 	{
-		"ID"			"2011"
+		"ID"			"2035"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"	"item_core_agility"
@@ -1100,7 +1100,7 @@
 	}
 	"item_core_agility_5"
 	{
-		"ID"			"2012"
+		"ID"			"2036"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityTextureName"	"item_core_agility"
@@ -1532,3 +1532,4 @@
 		}
 	}
 }
+//NEXT ITEM: ID 2037
