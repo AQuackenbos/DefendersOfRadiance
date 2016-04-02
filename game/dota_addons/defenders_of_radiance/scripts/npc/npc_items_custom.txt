@@ -230,7 +230,7 @@
 		"ID"			"2009"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_core_strength"
+		"AbilityTextureName"	"item_core_strength_2"
 		"Model"							"models/props_gameplay/red_box.vmdl" 
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		
@@ -281,7 +281,7 @@
 		"ID"			"2010"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_core_strength"
+		"AbilityTextureName"	"item_core_strength_3"
 		"Model"							"models/props_gameplay/red_box.vmdl" 
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		
@@ -332,7 +332,7 @@
 		"ID"			"2011"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_core_strength"
+		"AbilityTextureName"	"item_core_strength_4"
 		"Model"							"models/props_gameplay/red_box.vmdl" 
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		
@@ -383,7 +383,7 @@
 		"ID"			"2012"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_core_strength"
+		"AbilityTextureName"	"item_core_strength_5"
 		"Model"							"models/props_gameplay/red_box.vmdl" 
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		
@@ -590,7 +590,7 @@
 		"ID"			"2024"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_core_intellect"
+		"AbilityTextureName"	"item_core_intellect_2"
 		"Model"							"models/props_gameplay/red_box.vmdl" 
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		
@@ -641,7 +641,7 @@
 		"ID"			"2025"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_core_intellect"
+		"AbilityTextureName"	"item_core_intellect_3"
 		"Model"							"models/props_gameplay/red_box.vmdl" 
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		
@@ -692,7 +692,7 @@
 		"ID"			"2026"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_core_intellect"
+		"AbilityTextureName"	"item_core_intellect_4"
 		"Model"							"models/props_gameplay/red_box.vmdl" 
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		
@@ -743,7 +743,7 @@
 		"ID"			"2027"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_core_intellect"
+		"AbilityTextureName"	"item_core_intellect_5"
 		"Model"							"models/props_gameplay/red_box.vmdl" 
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		
@@ -950,7 +950,7 @@
 		"ID"			"2033"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_core_agility"
+		"AbilityTextureName"	"item_core_agility_2"
 		"Model"							"models/props_gameplay/red_box.vmdl" 
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		
@@ -1001,7 +1001,7 @@
 		"ID"			"2034"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_core_agility"
+		"AbilityTextureName"	"item_core_agility_3"
 		"Model"							"models/props_gameplay/red_box.vmdl" 
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		
@@ -1052,7 +1052,7 @@
 		"ID"			"2035"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_core_agility"
+		"AbilityTextureName"	"item_core_agility_4"
 		"Model"							"models/props_gameplay/red_box.vmdl" 
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		
@@ -1103,7 +1103,7 @@
 		"ID"			"2036"
 		"BaseClass"		"item_datadriven"
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_core_agility"
+		"AbilityTextureName"	"item_core_agility_5"
 		"Model"							"models/props_gameplay/red_box.vmdl" 
 		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
 		

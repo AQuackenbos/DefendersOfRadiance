@@ -5291,24 +5291,25 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"MaxLevel"						"7"
 		
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"800"
-		"AbilityCastPoint"				"0.45 0.45 0.45 0.45"
+		"AbilityCastPoint"				"0.45"
 	
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"8.5 7.5 6.5 5.5"
-		"AbilityDuration"				"0.6875 0.6875 0.6875 0.6875"
+		"AbilityCooldown"				"10 9 8 7 6 5 4"
+		"AbilityDuration"				"0.6875"
 	
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"90 150 210 280"
+		"AbilityDamage"					"90 150 210 270 330 390 450"
 	
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"90 105 125 140"
+		"AbilityManaCost"				"90 105 120 135 150 165 180"
 	
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -5550,10 +5551,11 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityTextureName"			"lina_fiery_soul"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"						"7"
 		
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDuration"				"7.0 7.5 8.0 8.5"
+		"AbilityDuration"				"7.0 7.5 8.0 8.5 9.0 9.5 10.0"
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -5562,27 +5564,27 @@
 			"01"
 			{
 				"var_type"								"FIELD_INTEGER"
-				"fiery_soul_attack_speed_bonus"			"40 45 50 55"
+				"fiery_soul_attack_speed_bonus"			"40 45 50 55 60 65 70"
 			}
 			"02"
 			{
 				"var_type"								"FIELD_INTEGER"
-				"fiery_soul_move_speed_bonus"			"4 5 6 7"
+				"fiery_soul_move_speed_bonus"			"4 5 6 7 8 9 10"
 			}
 			"03"
 			{
 				"var_type"								"FIELD_FLOAT"
-				"fiery_soul_cast_point_bonus"			"0.04 0.05 0.06 0.07"
+				"fiery_soul_cast_point_bonus"			"0.04 0.05 0.06 0.07 0.08 0.09 0.10"
 			}
 			"04"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"fiery_soul_max_stacks"				"3 4 4 5"
+				"fiery_soul_max_stacks"				"3 4 4 5 5 6 6"
 			}
 			"05"
 			{
 				"var_type"							"FIELD_FLOAT"
-				"duration"							"7.0 7.5 8.0 8.5"
+				"duration"							"7.0 7.5 8.0 8.5 9.0 9.5 10.0"
 			}
 		}
 	}
@@ -6446,22 +6448,23 @@
 		"BaseClass"						"lina_light_strike_array"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"MaxLevel"						"7"
 		
 		"AbilityCastRange"				"600"
-		"AbilityCastPoint"				"0.45 0.45 0.45 0.45"
+		"AbilityCastPoint"				"0.45"
 		
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"7.0 6.5 6.0 5.5"
-		"AbilityDuration"				"1.6 1.6 1.6 1.6"
+		"AbilityCooldown"				"7.0 6.5 6.0 5.5 5.0 4.5 4.0"
+		"AbilityDuration"				"1.6"
 	
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"90 150 210 280"
+		"AbilityDamage"					"90 130 170 210 250 290 330"
 	
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"90 105 125 140"
+		"AbilityManaCost"				"90 110 130 150 170 190 210"
 	
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -6470,7 +6473,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"light_strike_array_aoe"	"225"
+				"light_strike_array_aoe"	"225 240 255 270 285 300 315"
 			}
 			
 			"02"
@@ -6482,37 +6485,11 @@
 			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"light_strike_array_stun_duration"	"1.6"
+				"light_strike_array_stun_duration"	"1.6 1.7 1.8 1.9 2.0 2.1 2.2"
 			}
 		}
 	}
-	//=================================================================================================================
-	// Holdout Marksmanship
-	//=================================================================================================================
-	"holdout_marksmanship"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"drow_ranger_marksmanship"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 	
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"marksmanship_agility_bonus"	"40 60 80"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"radius"						"150"
-			}
-		}
-	}
 	//=================================================================================================================
 	// Ability: Mirana Arrow
 	//=================================================================================================================
