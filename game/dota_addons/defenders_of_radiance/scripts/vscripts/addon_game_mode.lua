@@ -33,6 +33,16 @@ function Activate()
 	GameRules.holdOut:InitGameMode()
 end
 
+function MergeTables( t1, t2 )
+    for name,info in pairs(t2) do
+        t1[name] = info
+    end
+end
+
+--API Extension
+function CDOTA_BaseNPC:GetProjectileModel()
+    return GameRules.UnitKV[self:GetUnitName()]["ProjectileModel"] or ""
+end
 
 function CHoldoutGameMode:InitGameMode()
 	self._nRoundNumber = 1
@@ -46,6 +56,12 @@ function CHoldoutGameMode:InitGameMode()
 	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 4 )
 	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 0 )
 
+	--Load KV for proper Splitshot method
+	GameRules.UnitKV = LoadKeyValues("scripts/npc/npc_units.txt")
+	MergeTables(GameRules.UnitKV, LoadKeyValues("scripts/npc/npc_heroes.txt"))
+	MergeTables(GameRules.UnitKV, LoadKeyValues("scripts/npc/npc_units_custom.txt"))
+	MergeTables(GameRules.UnitKV, LoadKeyValues("scripts/npc/npc_heroes_custom.txt"))
+	
 	self:_ReadGameConfiguration()
 	GameRules:SetTimeOfDay( 0.75 )
 	GameRules:SetHeroRespawnEnabled( true )
