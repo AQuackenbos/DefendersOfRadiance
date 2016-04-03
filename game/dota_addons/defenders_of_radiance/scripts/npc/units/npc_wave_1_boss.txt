@@ -1,0 +1,104 @@
+//=================================================================================
+// Wave 1: Boss: Kobold Healer
+//=================================================================================
+"npc_wave_1_boss"
+{
+	// General
+	//----------------------------------------------------------------
+	"Model"						"models/creeps/neutral_creeps/n_creep_kobold/kobold_a/n_creep_kobold_a.vmdl"	// Model.
+	"BaseClass"					"npc_dota_creature"
+	"SoundSet"					"n_creep_Ranged"
+	"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+	"Level"						"1"
+	"ModelScale" 				"1.6"
+	"ConsideredHero"			"1"
+	
+	// Abilities
+	//----------------------------------------------------------------
+	"Ability1"					"npc_wave_1_leader_health_aura"			// Ability 1
+	"Ability2"					""			// Ability 2
+	"Ability3"					""			// Ability 3
+	"Ability4"					""			// Ability 4
+
+	// Armor
+	//----------------------------------------------------------------
+	"ArmorPhysical"				"1"			// Physical protection.
+	"MagicalResistance"			"20"		// Magical protection (percentage).
+
+	// Attack
+	//----------------------------------------------------------------
+	"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackDamageMin"			"40"		// Damage range min.
+	"AttackDamageMax"			"40"		// Damage range max.	
+	"AttackRate"				"1.35"		// Speed of attack.
+	"AttackAnimationPoint"		"0.38"		// Normalized time in animation cycle to attack.
+	"AttackAcquisitionRange"	"600"		// Range within a target can be acquired.
+	"AttackRange"				"600"		// Range within a target can be attacked.
+	"ProjectileModel"			"particles/base_attacks/ranged_badguy.vpcf" // Particle system model for projectile.
+	"ProjectileSpeed"			"1200"			// Speed of projectile.		   
+
+	// Bounds
+	//----------------------------------------------------------------
+	"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+	"RingRadius"				"50"
+	"HealthBarOffset"			"180"
+
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyXP"					"105"		// Experience earn.
+	"BountyGoldMin"				"75"			// Gold earned min.
+	"BountyGoldMax"				"75"			// Gold earned max.
+
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"				"295"		// Speed.
+
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"				"900"		// Base health.
+	"StatusHealthRegen"			"5.0"		// Health regeneration rate.
+	"StatusMana"				"300"		// Base mana.
+	"StatusManaRegen"			"1.0"		// Mana regeneration rate.		 
+	
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"		"800"		// Range of vision during day light.
+	"VisionNighttimeRange"		"800"		// Range of vision at night time.
+
+	// Team
+	//----------------------------------------------------------------
+	"TeamName"					"DOTA_TEAM_NEUTRALS"							// Team name.
+	"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRONG"
+	"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+	// Creature Data
+	//----------------------------------------------------------------------------------------------------------------------
+	"Creature"
+	{
+		"CanRespawn"				"0"
+
+		//Level Up
+		"HPGain"					"125"
+		"MPGain"					"100"
+		"DamageGain"				"10"
+		"ArmorGain"					"1"
+		"MagicResistGain"			"0.1"
+		"MoveSpeedGain"				"0"
+		"BountyGain"				"0"
+		"XPGain"					"40"
+
+		"DefaultState"				"Invade"
+		"States"
+		{
+			"Invade"
+			{
+				"Name"			"Invade"
+				"Aggression"	"100.0"
+				"Avoidance"		"0.0"
+				"Support"		"0.0"
+			}
+		}
+	}
+}

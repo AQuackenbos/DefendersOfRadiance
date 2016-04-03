@@ -1,0 +1,146 @@
+//=================================================================================	
+// Wave 1: Leader: Kobold Chanter
+//=================================================================================
+"npc_wave_1_leader"	
+{
+	// General
+	//----------------------------------------------------------------
+	"Model"						"models/creeps/neutral_creeps/n_creep_kobold/kobold_b/n_creep_kobold_b.vmdl"	// Model.
+	"BaseClass"					"npc_dota_creature"
+	"SoundSet"					"n_creep_Ranged"
+	"GameSoundsFile"			"soundevents/game_sounds_creeps.vsndevts"
+	"Level"						"1"
+	"ModelScale" 				"1.5"
+
+	// Abilities
+	//----------------------------------------------------------------
+	"Ability1"					"npc_wave_1_boss_bloodlust"			// Ability 1
+	"Ability2"					""			// Ability 2
+	"Ability3"					""			// Ability 3
+	"Ability4"					""			// Ability 4
+
+	// Armor
+	//----------------------------------------------------------------
+	"ArmorPhysical"				"1"			// Physical protection.
+
+	// Attack
+	//----------------------------------------------------------------
+	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageMin"			"35"		// Damage range min.
+	"AttackDamageMax"			"35"		// Damage range max.
+	"AttackRate"				"1.6"		// Speed of attack.
+	"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
+	"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
+	"AttackRange"				"128"		// Range within a target can be attacked.
+	"ProjectileModel"			"" // Particle system model for projectile.
+	"ProjectileSpeed"			"0"		// Speed of projectile.		     
+
+	// Bounds
+	//----------------------------------------------------------------
+	"RingRadius"				"40"
+	"HealthBarOffset"			"170"
+
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyXP"					"75"		// Experience earn.
+	"BountyGoldMin"				"40"		// Gold earned min.
+	"BountyGoldMax"				"40"		// Gold earned max.
+
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"				"290"		// Speed.			
+
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"				"550"		// Base health.
+	"StatusHealthRegen"			"3.0"		// Health regeneration rate.
+	"StatusMana"				"200"			// Base mana.
+	"StatusManaRegen"			"3.0"		// Mana regeneration rate.		 
+	
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"		"400"		// Range of vision during day light.
+	"VisionNighttimeRange"		"400"		// Range of vision at night time.
+
+	// Team
+	//----------------------------------------------------------------
+	"TeamName"					"DOTA_TEAM_NEUTRALS"							// Team name.
+	"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+	// Creature Data
+	//----------------------------------------------------------------------------------------------------------------------
+	"Creature"
+	{
+
+		"States"
+		{
+			"Invade"
+			{
+				"Name"                          "Invade"
+				"Aggression"           			"65.0"
+				"Avoidance"                     "0.0"
+				"Support"                       "100.0"
+				//"RoamDistance"                "150.0"
+			}
+		}
+
+		"DefaultState"                          "Invade"
+		
+
+		
+		"DefensiveAbilities"
+		{
+			"Ability1"				
+			{
+				"Name"				"npc_wave_1_boss_bloodlust"
+				"Buff"				"1"
+			}
+		}
+		
+		//"OffensiveAbilities"
+		//{		
+		//	"Ability1"
+		//	{
+		//		"Name"				"ability_name"
+		////Example Params
+		//		"AOE"                "1"
+		//		"Radius"             "800"
+		//		"MinimumTargets"     "1"
+		//		"UseOnTrees"		"1"
+		//		"Stun"				"1"
+		//		"Debuff"			"1"
+		//	}
+		//}
+		//"DefensiveAbilities"
+		//{
+		//	"Ability1"				
+		//	{
+		//		"Name"				"ability_name"
+		////Example Params
+		//		"MinimumTargets"     "1"
+		//		"Heal"				"1"
+		//		"UseSelfishly"		"1"
+		//		"Buff"				"1"
+		//		"UseAtHealthPercent""50"
+		//	}
+		//}
+		//"EquippedItems"
+		//{
+		//	"Ultimate Scepter"              {"Item"        "item_ultimate_scepter"}
+		//	"Mask of Madness"           	{"Item"        "item_mask_of_madness"}
+		//	"Assault Cuirass"           	{"Item"        "item_assault"}
+		//}
+		
+		//Level Up
+		"HPGain"					"75"
+		"DamageGain"				"6"
+		"ArmorGain"					"0.25"
+		"MagicResistGain"			"0.1"
+		"MoveSpeedGain"				"0"
+		"BountyGain"				"0"
+		"XPGain"					"30"
+	}
+}

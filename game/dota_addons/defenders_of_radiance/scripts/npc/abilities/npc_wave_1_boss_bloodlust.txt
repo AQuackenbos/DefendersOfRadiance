@@ -1,0 +1,66 @@
+//=================================================================================================================
+// Enemy Wave Abilities
+//=================================================================================================================
+
+
+
+//=================================================================================================================
+// Wave 1: Leader: Bloodlust
+//=================================================================================================================
+"npc_wave_1_boss_bloodlust"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ogre_magi_bloodlust"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"900"
+	"AbilityCastPoint"				"0.56"
+	
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"5"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"25"
+
+	"precache"
+	{
+		"particle_folder"				"particles/units/heroes/hero_ogre_magi"
+	}
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"duration"				"15"
+		}
+
+		"02"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"modelscale"			"15"
+		}	
+
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_movement_speed"	"15"
+		}
+
+		"04"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_attack_speed"	"50"
+		}
+	}
+}
