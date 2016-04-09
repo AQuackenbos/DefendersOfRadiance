@@ -31,15 +31,19 @@
 		"ItemInitialCharges"			"1"
 		"ItemKillable"					"0"
 	}
+	//=================================================================================================================
+	// ITEM: Agility Core Lv 1
+	//=================================================================================================================
 	"item_core_agility"
 	{
-		"ID"					"2032"
+		"ID"					"2018"
 		"BaseClass"				"item_datadriven"
 		
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
 		"AbilityTextureName"	"item_core_agility"
-		"Model"							"models/props_gameplay/red_box.vmdl" 
-		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+		"Model"					"models/props_gameplay/red_box.vmdl" 
+		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
 		"ItemCost"				"250"
 		"ItemKillable"			"0"
@@ -56,16 +60,16 @@
 		"ItemAliases"			"agility;agi;core"
 		"ItemQuality"			"component"
 		
-		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" "Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" "Item.DropGemWorld" //Sound when dropping the item on death (?)
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_Type"		"FIELD_INTEGER"
-				"bonus_agi"		"10 20 30 40 50"
+				"var_type"	"FIELD_INTEGER"
+				"bonus_agi"	"10 20 40 80 160"
 			}
 		}
 		
@@ -75,22 +79,27 @@
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
-				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_agi"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_str"
 				}
 			}
 		}
 	}
+	//=================================================================================================================
+	// ITEM: Agility Core Lv 2
+	//=================================================================================================================
 	"item_core_agility_2"
 	{
-		"ID"			"2033"
-		"BaseClass"		"item_datadriven"
+		"ID"					"2019"
+		"BaseClass"				"item_datadriven"
+		
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
 		"AbilityTextureName"	"item_core_agility_2"
-		"Model"							"models/props_gameplay/red_box.vmdl" 
-		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+		"Model"					"models/props_gameplay/red_box.vmdl" 
+		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
 		"ItemCost"				"250"
 		"ItemKillable"			"0"
@@ -107,16 +116,16 @@
 		"ItemAliases"			"agility;agi;core"
 		"ItemQuality"			"component"
 		
-		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" "Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" "Item.DropGemWorld" //Sound when dropping the item on death (?)
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_Type"		"FIELD_INTEGER"
-				"bonus_agi"		"10 20 30 40 50"
+				"var_type"	"FIELD_INTEGER"
+				"bonus_agi"	"10 20 40 80 160"
 			}
 		}
 		
@@ -126,22 +135,27 @@
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
-				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_agi"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_str"
 				}
 			}
 		}
 	}
+	//=================================================================================================================
+	// ITEM: Agility Core Lv 3
+	//=================================================================================================================
 	"item_core_agility_3"
 	{
-		"ID"			"2034"
-		"BaseClass"		"item_datadriven"
+		"ID"					"2021"
+		"BaseClass"				"item_datadriven"
+		
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
 		"AbilityTextureName"	"item_core_agility_3"
-		"Model"							"models/props_gameplay/red_box.vmdl" 
-		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+		"Model"					"models/props_gameplay/red_box.vmdl" 
+		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
 		"ItemCost"				"250"
 		"ItemKillable"			"0"
@@ -158,16 +172,16 @@
 		"ItemAliases"			"agility;agi;core"
 		"ItemQuality"			"component"
 		
-		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" "Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" "Item.DropGemWorld" //Sound when dropping the item on death (?)
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_Type"		"FIELD_INTEGER"
-				"bonus_agi"		"10 20 30 40 50"
+				"var_type"	"FIELD_INTEGER"
+				"bonus_agi"	"10 20 40 80 160"
 			}
 		}
 		
@@ -177,125 +191,139 @@
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
-				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_agi"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_str"
 				}
 			}
 		}
 	}
+	//=================================================================================================================
+	// ITEM: Agility Core Lv 4
+	//=================================================================================================================
 	"item_core_agility_4"
-	{
-		"ID"			"2035"
-		"BaseClass"		"item_datadriven"
-		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_core_agility_4"
-		"Model"							"models/props_gameplay/red_box.vmdl" 
-		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
-		
-		"ItemCost"				"250"
-		"ItemKillable"			"0"
-		"ItemSellable"			"1"
-		"ItemPurchasable"		"1"
-		"ItemDroppable"			"1"
-		
-		"ItemShareability"		"ITEM_NOT_SHAREABLE"
-		
-		"MaxUpgradeLevel"		"5"
-		"ItemBaseLevel"			"4"
-		
-		"ItemShopTags"			"agi"
-		"ItemAliases"			"agility;agi;core"
-		"ItemQuality"			"component"
-		
-		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" "Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" "Item.DropGemWorld" //Sound when dropping the item on death (?)
-	
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_Type"		"FIELD_INTEGER"
-				"bonus_agi"		"10 20 30 40 50"
-			}
-		}
-		
-		"Modifiers"
-		{
-			"modifier_item_core_agility"
-			{
-				"Passive"		"1"
-				"IsHidden"		"1"
-				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_agi"
-				}
-			}
-		}
-	}
-	"item_core_agility_5"
-	{
-		"ID"			"2036"
-		"BaseClass"		"item_datadriven"
-		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_core_agility_5"
-		"Model"							"models/props_gameplay/red_box.vmdl" 
-		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
-		
-		"ItemCost"				"250"
-		"ItemKillable"			"0"
-		"ItemSellable"			"1"
-		"ItemPurchasable"		"1"
-		"ItemDroppable"			"1"
-		
-		"ItemShareability"		"ITEM_NOT_SHAREABLE"
-		
-		"MaxUpgradeLevel"		"5"
-		"ItemBaseLevel"			"5"
-		
-		"ItemShopTags"			"agi"
-		"ItemAliases"			"agility;agi;core"
-		"ItemQuality"			"component"
-		
-		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" "Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" "Item.DropGemWorld" //Sound when dropping the item on death (?)
-	
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_Type"		"FIELD_INTEGER"
-				"bonus_agi"		"10 20 30 40 50"
-			}
-		}
-		
-		"Modifiers"
-		{
-			"modifier_item_core_agility"
-			{
-				"Passive"		"1"
-				"IsHidden"		"1"
-				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_agi"
-				}
-			}
-		}
-	}
-	"item_core_intellect"
 	{
 		"ID"					"2023"
 		"BaseClass"				"item_datadriven"
 		
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		"AbilityTextureName"	"item_core_agility_4"
+		"Model"					"models/props_gameplay/red_box.vmdl" 
+		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
+		
+		"ItemCost"				"250"
+		"ItemKillable"			"0"
+		"ItemSellable"			"1"
+		"ItemPurchasable"		"1"
+		"ItemDroppable"			"1"
+		
+		"ItemShareability"		"ITEM_NOT_SHAREABLE"
+		
+		"MaxUpgradeLevel"		"5"
+		"ItemBaseLevel"			"4"
+		
+		"ItemShopTags"			"agi"
+		"ItemAliases"			"agility;agi;core"
+		"ItemQuality"			"component"
+		
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
+	
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_agi"	"10 20 40 80 160"
+			}
+		}
+		
+		"Modifiers"
+		{
+			"modifier_item_core_agility"
+			{
+				"Passive"		"1"
+				"IsHidden"		"1"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_str"
+				}
+			}
+		}
+	}
+	//=================================================================================================================
+	// ITEM: Agility Core Lv 5
+	//=================================================================================================================
+	"item_core_agility_5"
+	{
+		"ID"					"2025"
+		"BaseClass"				"item_datadriven"
+		
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		"AbilityTextureName"	"item_core_agility_5"
+		"Model"					"models/props_gameplay/red_box.vmdl" 
+		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
+		
+		"ItemCost"				"250"
+		"ItemKillable"			"0"
+		"ItemSellable"			"1"
+		"ItemPurchasable"		"1"
+		"ItemDroppable"			"1"
+		
+		"ItemShareability"		"ITEM_NOT_SHAREABLE"
+		
+		"MaxUpgradeLevel"		"5"
+		"ItemBaseLevel"			"5"
+		
+		"ItemShopTags"			"agi"
+		"ItemAliases"			"agility;agi;core"
+		"ItemQuality"			"component"
+		
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
+	
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_agi"	"10 20 40 80 160"
+			}
+		}
+		
+		"Modifiers"
+		{
+			"modifier_item_core_agility"
+			{
+				"Passive"		"1"
+				"IsHidden"		"1"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_str"
+				}
+			}
+		}
+	}
+	//=================================================================================================================
+	// ITEM: Intellect Core Lv 1
+	//=================================================================================================================
+	"item_core_intellect"
+	{
+		"ID"					"2009"
+		"BaseClass"				"item_datadriven"
+		
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
 		"AbilityTextureName"	"item_core_intellect"
-		"Model"							"models/props_gameplay/red_box.vmdl" 
-		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+		"Model"					"models/props_gameplay/red_box.vmdl" 
+		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
 		"ItemCost"				"250"
 		"ItemKillable"			"0"
@@ -312,16 +340,16 @@
 		"ItemAliases"			"intellect;int;core"
 		"ItemQuality"			"component"
 		
-		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" "Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" "Item.DropGemWorld" //Sound when dropping the item on death (?)
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_Type"		"FIELD_INTEGER"
-				"bonus_int"		"10 20 30 40 50"
+				"var_type"	"FIELD_INTEGER"
+				"bonus_int"	"10 20 40 80 160"
 			}
 		}
 		
@@ -331,22 +359,27 @@
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
-				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_int"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_str"
 				}
 			}
 		}
 	}
+	//=================================================================================================================
+	// ITEM: Intellect Core Lv 2
+	//=================================================================================================================
 	"item_core_intellect_2"
 	{
-		"ID"			"2024"
-		"BaseClass"		"item_datadriven"
+		"ID"					"2010"
+		"BaseClass"				"item_datadriven"
+		
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
 		"AbilityTextureName"	"item_core_intellect_2"
-		"Model"							"models/props_gameplay/red_box.vmdl" 
-		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+		"Model"					"models/props_gameplay/red_box.vmdl" 
+		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
 		"ItemCost"				"250"
 		"ItemKillable"			"0"
@@ -363,16 +396,16 @@
 		"ItemAliases"			"intellect;int;core"
 		"ItemQuality"			"component"
 		
-		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" "Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" "Item.DropGemWorld" //Sound when dropping the item on death (?)
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_Type"		"FIELD_INTEGER"
-				"bonus_int"		"10 20 30 40 50"
+				"var_type"	"FIELD_INTEGER"
+				"bonus_int"	"10 20 40 80 160"
 			}
 		}
 		
@@ -382,22 +415,27 @@
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
-				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_int"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_str"
 				}
 			}
 		}
 	}
+	//=================================================================================================================
+	// ITEM: Intellect Core Lv 3
+	//=================================================================================================================
 	"item_core_intellect_3"
 	{
-		"ID"			"2025"
-		"BaseClass"		"item_datadriven"
+		"ID"					"2012"
+		"BaseClass"				"item_datadriven"
+		
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
 		"AbilityTextureName"	"item_core_intellect_3"
-		"Model"							"models/props_gameplay/red_box.vmdl" 
-		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+		"Model"					"models/props_gameplay/red_box.vmdl" 
+		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
 		"ItemCost"				"250"
 		"ItemKillable"			"0"
@@ -414,16 +452,16 @@
 		"ItemAliases"			"intellect;int;core"
 		"ItemQuality"			"component"
 		
-		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" "Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" "Item.DropGemWorld" //Sound when dropping the item on death (?)
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_Type"		"FIELD_INTEGER"
-				"bonus_int"		"10 20 30 40 50"
+				"var_type"	"FIELD_INTEGER"
+				"bonus_int"	"10 20 40 80 160"
 			}
 		}
 		
@@ -433,22 +471,27 @@
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
-				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_int"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_str"
 				}
 			}
 		}
 	}
+	//=================================================================================================================
+	// ITEM: Intellect Core Lv 4
+	//=================================================================================================================
 	"item_core_intellect_4"
 	{
-		"ID"			"2026"
-		"BaseClass"		"item_datadriven"
+		"ID"					"2014"
+		"BaseClass"				"item_datadriven"
+		
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
 		"AbilityTextureName"	"item_core_intellect_4"
-		"Model"							"models/props_gameplay/red_box.vmdl" 
-		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+		"Model"					"models/props_gameplay/red_box.vmdl" 
+		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
 		"ItemCost"				"250"
 		"ItemKillable"			"0"
@@ -465,16 +508,16 @@
 		"ItemAliases"			"intellect;int;core"
 		"ItemQuality"			"component"
 		
-		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" "Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" "Item.DropGemWorld" //Sound when dropping the item on death (?)
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_Type"		"FIELD_INTEGER"
-				"bonus_int"		"10 20 30 40 50"
+				"var_type"	"FIELD_INTEGER"
+				"bonus_int"	"10 20 40 80 160"
 			}
 		}
 		
@@ -484,22 +527,27 @@
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
-				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_int"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_str"
 				}
 			}
 		}
 	}
+	//=================================================================================================================
+	// ITEM: Intellect Core Lv 5
+	//=================================================================================================================
 	"item_core_intellect_5"
 	{
-		"ID"			"2027"
-		"BaseClass"		"item_datadriven"
+		"ID"					"2016"
+		"BaseClass"				"item_datadriven"
+		
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
 		"AbilityTextureName"	"item_core_intellect_5"
-		"Model"							"models/props_gameplay/red_box.vmdl" 
-		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+		"Model"					"models/props_gameplay/red_box.vmdl" 
+		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
 		"ItemCost"				"250"
 		"ItemKillable"			"0"
@@ -516,16 +564,16 @@
 		"ItemAliases"			"intellect;int;core"
 		"ItemQuality"			"component"
 		
-		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" "Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" "Item.DropGemWorld" //Sound when dropping the item on death (?)
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_Type"		"FIELD_INTEGER"
-				"bonus_int"		"10 20 30 40 50"
+				"var_type"	"FIELD_INTEGER"
+				"bonus_int"	"10 20 40 80 160"
 			}
 		}
 		
@@ -535,23 +583,27 @@
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
-				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_int"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_str"
 				}
 			}
 		}
 	}
+	//=================================================================================================================
+	// ITEM: Strength Core Lv 1
+	//=================================================================================================================
 	"item_core_strength"
 	{
 		"ID"					"2000"
 		"BaseClass"				"item_datadriven"
 		
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
 		"AbilityTextureName"	"item_core_strength"
-		"Model"							"models/props_gameplay/red_box.vmdl" 
-		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+		"Model"					"models/props_gameplay/red_box.vmdl" 
+		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
 		"ItemCost"				"250"
 		"ItemKillable"			"0"
@@ -568,17 +620,18 @@
 		"ItemAliases"			"strength;str;core"
 		"ItemQuality"			"component"
 		
-		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" "Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" "Item.DropGemWorld" //Sound when dropping the item on death (?)
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_Type"		"FIELD_INTEGER"
-				"bonus_str"		"10 20 30 40 50"
+				"var_type"	"FIELD_INTEGER"
+				"bonus_str"	"10 20 40 80 160"
 			}
+			
 		}
 		
 		"Modifiers"
@@ -587,22 +640,28 @@
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
-				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_str"
 				}
 			}
+			
 		}
 	}
+	//=================================================================================================================
+	// ITEM: Strength Core Lv 2
+	//=================================================================================================================
 	"item_core_strength_2"
 	{
-		"ID"			"2009"
-		"BaseClass"		"item_datadriven"
+		"ID"					"2001"
+		"BaseClass"				"item_datadriven"
+		
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
 		"AbilityTextureName"	"item_core_strength_2"
-		"Model"							"models/props_gameplay/red_box.vmdl" 
-		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+		"Model"					"models/props_gameplay/red_box.vmdl" 
+		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
 		"ItemCost"				"250"
 		"ItemKillable"			"0"
@@ -619,17 +678,18 @@
 		"ItemAliases"			"strength;str;core"
 		"ItemQuality"			"component"
 		
-		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" "Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" "Item.DropGemWorld" //Sound when dropping the item on death (?)
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_Type"		"FIELD_INTEGER"
-				"bonus_str"		"10 20 30 40 50"
+				"var_type"	"FIELD_INTEGER"
+				"bonus_str"	"10 20 40 80 160"
 			}
+			
 		}
 		
 		"Modifiers"
@@ -638,22 +698,28 @@
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
-				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_str"
 				}
 			}
+			
 		}
 	}
+	//=================================================================================================================
+	// ITEM: Strength Core Lv 3
+	//=================================================================================================================
 	"item_core_strength_3"
 	{
-		"ID"			"2010"
-		"BaseClass"		"item_datadriven"
+		"ID"					"2003"
+		"BaseClass"				"item_datadriven"
+		
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
 		"AbilityTextureName"	"item_core_strength_3"
-		"Model"							"models/props_gameplay/red_box.vmdl" 
-		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+		"Model"					"models/props_gameplay/red_box.vmdl" 
+		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
 		"ItemCost"				"250"
 		"ItemKillable"			"0"
@@ -670,17 +736,18 @@
 		"ItemAliases"			"strength;str;core"
 		"ItemQuality"			"component"
 		
-		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" "Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" "Item.DropGemWorld" //Sound when dropping the item on death (?)
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_Type"		"FIELD_INTEGER"
-				"bonus_str"		"10 20 30 40 50"
+				"var_type"	"FIELD_INTEGER"
+				"bonus_str"	"10 20 40 80 160"
 			}
+			
 		}
 		
 		"Modifiers"
@@ -689,22 +756,28 @@
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
-				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_str"
 				}
 			}
+			
 		}
 	}
+	//=================================================================================================================
+	// ITEM: Strength Core Lv 4
+	//=================================================================================================================
 	"item_core_strength_4"
 	{
-		"ID"			"2011"
-		"BaseClass"		"item_datadriven"
+		"ID"					"2005"
+		"BaseClass"				"item_datadriven"
+		
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
 		"AbilityTextureName"	"item_core_strength_4"
-		"Model"							"models/props_gameplay/red_box.vmdl" 
-		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+		"Model"					"models/props_gameplay/red_box.vmdl" 
+		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
 		"ItemCost"				"250"
 		"ItemKillable"			"0"
@@ -721,17 +794,18 @@
 		"ItemAliases"			"strength;str;core"
 		"ItemQuality"			"component"
 		
-		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" "Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" "Item.DropGemWorld" //Sound when dropping the item on death (?)
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_Type"		"FIELD_INTEGER"
-				"bonus_str"		"10 20 30 40 50"
+				"var_type"	"FIELD_INTEGER"
+				"bonus_str"	"10 20 40 80 160"
 			}
+			
 		}
 		
 		"Modifiers"
@@ -740,22 +814,28 @@
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
-				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_str"
 				}
 			}
+			
 		}
 	}
+	//=================================================================================================================
+	// ITEM: Strength Core Lv 5
+	//=================================================================================================================
 	"item_core_strength_5"
 	{
-		"ID"			"2012"
-		"BaseClass"		"item_datadriven"
+		"ID"					"2007"
+		"BaseClass"				"item_datadriven"
+		
 		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
 		"AbilityTextureName"	"item_core_strength_5"
-		"Model"							"models/props_gameplay/red_box.vmdl" 
-		"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+		"Model"					"models/props_gameplay/red_box.vmdl" 
+		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
 		"ItemCost"				"250"
 		"ItemKillable"			"0"
@@ -772,17 +852,18 @@
 		"ItemAliases"			"strength;str;core"
 		"ItemQuality"			"component"
 		
-		"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" "Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" "Item.DropGemWorld" //Sound when dropping the item on death (?)
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_Type"		"FIELD_INTEGER"
-				"bonus_str"		"10 20 30 40 50"
+				"var_type"	"FIELD_INTEGER"
+				"bonus_str"	"10 20 40 80 160"
 			}
+			
 		}
 		
 		"Modifiers"
@@ -791,32 +872,33 @@
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
-				"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_str"
 				}
 			}
+			
 		}
 	}
 	//=================================================================================================================
-	// ITEM: Agility Core
+	// RECIPE: Agility Core Lv 2
 	//=================================================================================================================
 	"item_recipe_core_agility_2"
 	{
-		"ID"					"2028"
-			// General
+		"ID"							"2020"
+		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_core_agility"
+		"AbilityTextureName"			"item_core_agility_2"
 	
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"250"	
-		"ItemShopTags"					""
-	    	
+		"ItemShopTags"					"agi"
+			
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -826,21 +908,24 @@
 			"01"						"item_core_agility"
 		}
 	}	
+	//=================================================================================================================
+	// RECIPE: Agility Core Lv 3
+	//=================================================================================================================
 	"item_recipe_core_agility_3"
 	{
-		"ID"					"2029"
-			// General
+		"ID"							"2022"
+		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_core_agility"
+		"AbilityTextureName"			"item_core_agility_3"
 	
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"250"	
-		"ItemShopTags"					""
-	    	
+		"ItemShopTags"					"agi"
+			
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -849,22 +934,25 @@
 		{
 			"01"						"item_core_agility_2"
 		}
-	}
+	}	
+	//=================================================================================================================
+	// RECIPE: Agility Core Lv 4
+	//=================================================================================================================
 	"item_recipe_core_agility_4"
 	{
-		"ID"					"2030"
-			// General
+		"ID"							"2024"
+		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_core_agility"
+		"AbilityTextureName"			"item_core_agility_4"
 	
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"250"	
-		"ItemShopTags"					""
-	    	
+		"ItemShopTags"					"agi"
+			
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -873,22 +961,25 @@
 		{
 			"01"						"item_core_agility_3"
 		}
-	}
+	}	
+	//=================================================================================================================
+	// RECIPE: Agility Core Lv 5
+	//=================================================================================================================
 	"item_recipe_core_agility_5"
 	{
-		"ID"					"2031"
-			// General
+		"ID"							"2026"
+		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_core_agility"
+		"AbilityTextureName"			"item_core_agility_5"
 	
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"250"	
-		"ItemShopTags"					""
-	    	
+		"ItemShopTags"					"agi"
+			
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -897,25 +988,25 @@
 		{
 			"01"						"item_core_agility_4"
 		}
-	}
+	}	
 	//=================================================================================================================
-	// ITEM: intellect Core
+	// RECIPE: Intellect Core Lv 2
 	//=================================================================================================================
 	"item_recipe_core_intellect_2"
 	{
-		"ID"					"2019"
-			// General
+		"ID"							"2011"
+		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_core_intellect"
+		"AbilityTextureName"			"item_core_intellect_2"
 	
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"250"	
-		"ItemShopTags"					""
-	    	
+		"ItemShopTags"					"int"
+			
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -925,21 +1016,24 @@
 			"01"						"item_core_intellect"
 		}
 	}	
+	//=================================================================================================================
+	// RECIPE: Intellect Core Lv 3
+	//=================================================================================================================
 	"item_recipe_core_intellect_3"
 	{
-		"ID"					"2020"
-			// General
+		"ID"							"2013"
+		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_core_intellect"
+		"AbilityTextureName"			"item_core_intellect_3"
 	
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"250"	
-		"ItemShopTags"					""
-	    	
+		"ItemShopTags"					"int"
+			
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -948,22 +1042,25 @@
 		{
 			"01"						"item_core_intellect_2"
 		}
-	}
+	}	
+	//=================================================================================================================
+	// RECIPE: Intellect Core Lv 4
+	//=================================================================================================================
 	"item_recipe_core_intellect_4"
 	{
-		"ID"					"2021"
-			// General
+		"ID"							"2015"
+		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_core_intellect"
+		"AbilityTextureName"			"item_core_intellect_4"
 	
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"250"	
-		"ItemShopTags"					""
-	    	
+		"ItemShopTags"					"int"
+			
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -972,22 +1069,25 @@
 		{
 			"01"						"item_core_intellect_3"
 		}
-	}
+	}	
+	//=================================================================================================================
+	// RECIPE: Intellect Core Lv 5
+	//=================================================================================================================
 	"item_recipe_core_intellect_5"
 	{
-		"ID"					"2022"
-			// General
+		"ID"							"2017"
+		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_core_intellect"
+		"AbilityTextureName"			"item_core_intellect_5"
 	
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"250"	
-		"ItemShopTags"					""
-	    	
+		"ItemShopTags"					"int"
+			
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -996,25 +1096,25 @@
 		{
 			"01"						"item_core_intellect_4"
 		}
-	}
+	}	
 	//=================================================================================================================
-	// ITEM: Strength Core
+	// RECIPE: Strength Core Lv 2
 	//=================================================================================================================
 	"item_recipe_core_strength_2"
 	{
-		"ID"					"2001"
-			// General
+		"ID"							"2002"
+		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_core_strength"
+		"AbilityTextureName"			"item_core_strength_2"
 	
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"250"	
-		"ItemShopTags"					""
-	    	
+		"ItemShopTags"					"str"
+			
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -1024,21 +1124,24 @@
 			"01"						"item_core_strength"
 		}
 	}	
+	//=================================================================================================================
+	// RECIPE: Strength Core Lv 3
+	//=================================================================================================================
 	"item_recipe_core_strength_3"
 	{
-		"ID"					"2002"
-			// General
+		"ID"							"2004"
+		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_core_strength"
+		"AbilityTextureName"			"item_core_strength_3"
 	
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"250"	
-		"ItemShopTags"					""
-	    	
+		"ItemShopTags"					"str"
+			
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -1047,22 +1150,25 @@
 		{
 			"01"						"item_core_strength_2"
 		}
-	}
+	}	
+	//=================================================================================================================
+	// RECIPE: Strength Core Lv 4
+	//=================================================================================================================
 	"item_recipe_core_strength_4"
 	{
-		"ID"					"2003"
-			// General
+		"ID"							"2006"
+		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_core_strength"
+		"AbilityTextureName"			"item_core_strength_4"
 	
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"250"	
-		"ItemShopTags"					""
-	    	
+		"ItemShopTags"					"str"
+			
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -1071,22 +1177,25 @@
 		{
 			"01"						"item_core_strength_3"
 		}
-	}
+	}	
+	//=================================================================================================================
+	// RECIPE: Strength Core Lv 5
+	//=================================================================================================================
 	"item_recipe_core_strength_5"
 	{
-		"ID"					"2004"
-			// General
+		"ID"							"2008"
+		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_core_strength"
+		"AbilityTextureName"			"item_core_strength_5"
 	
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"250"	
-		"ItemShopTags"					""
-	    	
+		"ItemShopTags"					"str"
+			
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -1095,25 +1204,25 @@
 		{
 			"01"						"item_core_strength_4"
 		}
-	}
+	}	
 	//=================================================================================================================
-	// ITEM: Steel Shield
+	// RECIPE: Steel Shield Lv 2
 	//=================================================================================================================
 	"item_recipe_steel_shield_2"
 	{
-		"ID"					"2008"
-			// General
+		"ID"							"2029"
+		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_steel_shield"
+		"AbilityTextureName"			"item_steel_shield_2"
 	
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"250"	
-		"ItemShopTags"					""
-	    	
+		"ItemShopTags"					"block"
+			
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -1123,21 +1232,24 @@
 			"01"						"item_steel_shield"
 		}
 	}	
+	//=================================================================================================================
+	// RECIPE: Steel Shield Lv 3
+	//=================================================================================================================
 	"item_recipe_steel_shield_3"
 	{
-		"ID"					"2013"
-			// General
+		"ID"							"2031"
+		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_steel_shield"
+		"AbilityTextureName"			"item_steel_shield_3"
 	
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"250"	
-		"ItemShopTags"					""
-	    	
+		"ItemShopTags"					"block"
+			
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -1147,21 +1259,24 @@
 			"01"						"item_steel_shield_2"
 		}
 	}	
+	//=================================================================================================================
+	// RECIPE: Steel Shield Lv 4
+	//=================================================================================================================
 	"item_recipe_steel_shield_4"
 	{
-		"ID"					"2014"
-			// General
+		"ID"							"2033"
+		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_steel_shield"
+		"AbilityTextureName"			"item_steel_shield_4"
 	
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"250"	
-		"ItemShopTags"					""
-	    	
+		"ItemShopTags"					"block"
+			
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -1171,21 +1286,24 @@
 			"01"						"item_steel_shield_3"
 		}
 	}	
+	//=================================================================================================================
+	// RECIPE: Steel Shield Lv 5
+	//=================================================================================================================
 	"item_recipe_steel_shield_5"
 	{
-		"ID"					"2015"
-			// General
+		"ID"							"2035"
+		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"Model"							"models/props_gameplay/recipe.mdl"
 		"BaseClass"						"item_datadriven"
-		"AbilityTextureName"			"item_steel_shield"
+		"AbilityTextureName"			"item_steel_shield_5"
 	
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"250"	
-		"ItemShopTags"					""
-	    	
+		"ItemShopTags"					"block"
+			
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
@@ -1194,26 +1312,26 @@
 		{
 			"01"						"item_steel_shield_4"
 		}
-	}
+	}	
+	//=================================================================================================================
+	// ITEM: Steel Shield Lv 1
+	//=================================================================================================================
 	"item_steel_shield"
 	{
-		"ID"					"2006"
+		"ID"					"2027"
 		"BaseClass"				"item_datadriven"
 		
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		"AbilityTextureName"	"item_steel_shield"
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
-		
-		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_steel_shield"
 		
 		"ItemCost"				"250"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
 		"ItemDroppable"			"1"
-		"ItemDeclarations"		"DECLARE_PURCHASES_TO_SPECTATORS"
-		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_NEVER"
-		
 		
 		"ItemShareability"		"ITEM_NOT_SHAREABLE"
 		
@@ -1221,19 +1339,24 @@
 		"ItemBaseLevel"			"1"
 		
 		"ItemShopTags"			"block"
-		"ItemAliases"			"block;defense"
+		"ItemAliases"			"block;defense;regen"
 		"ItemQuality"			"component"
 		
-		"UIPickupSound" 	"Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" 		"Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" 	"Item.DropGemWorld" //Sound when dropping the item on death (?)
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_Type"		"FIELD_INTEGER"
-				"damage_block"		"10 20 30 40 50"
+				"var_type"		"FIELD_INTEGER"
+				"damage_block"	"7 14 21 28 35"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_health_regen"	"2 4 6 8 10"
 			}
 		}
 		
@@ -1243,32 +1366,34 @@
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
+				"Attributes" 	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK"	"%damage_block"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%bonus_health_regen"
 				}
 			}
 		}
 	}
+	//=================================================================================================================
+	// ITEM: Steel Shield Lv 2
+	//=================================================================================================================
 	"item_steel_shield_2"
 	{
-		"ID"					"2007"
+		"ID"					"2028"
 		"BaseClass"				"item_datadriven"
 		
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		"AbilityTextureName"	"item_steel_shield_2"
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
-		
-		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_steel_shield"
 		
 		"ItemCost"				"250"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
 		"ItemDroppable"			"1"
-		"ItemDeclarations"		"DECLARE_PURCHASES_TO_SPECTATORS"
-		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_NEVER"
-		
 		
 		"ItemShareability"		"ITEM_NOT_SHAREABLE"
 		
@@ -1276,19 +1401,24 @@
 		"ItemBaseLevel"			"2"
 		
 		"ItemShopTags"			"block"
-		"ItemAliases"			"block;defense"
+		"ItemAliases"			"block;defense;regen"
 		"ItemQuality"			"component"
 		
-		"UIPickupSound" 	"Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" 		"Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" 	"Item.DropGemWorld" //Sound when dropping the item on death (?)
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_Type"		"FIELD_INTEGER"
-				"damage_block"		"10 20 30 40 50"
+				"var_type"		"FIELD_INTEGER"
+				"damage_block"	"7 14 21 28 35"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_health_regen"	"2 4 6 8 10"
 			}
 		}
 		
@@ -1298,32 +1428,34 @@
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
+				"Attributes" 	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK"	"%damage_block"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%bonus_health_regen"
 				}
 			}
 		}
 	}
+	//=================================================================================================================
+	// ITEM: Steel Shield Lv 3
+	//=================================================================================================================
 	"item_steel_shield_3"
 	{
-		"ID"					"2016"
+		"ID"					"2030"
 		"BaseClass"				"item_datadriven"
 		
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		"AbilityTextureName"	"item_steel_shield_3"
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
-		
-		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_steel_shield"
 		
 		"ItemCost"				"250"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
 		"ItemDroppable"			"1"
-		"ItemDeclarations"		"DECLARE_PURCHASES_TO_SPECTATORS"
-		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_NEVER"
-		
 		
 		"ItemShareability"		"ITEM_NOT_SHAREABLE"
 		
@@ -1331,19 +1463,24 @@
 		"ItemBaseLevel"			"3"
 		
 		"ItemShopTags"			"block"
-		"ItemAliases"			"block;defense"
+		"ItemAliases"			"block;defense;regen"
 		"ItemQuality"			"component"
 		
-		"UIPickupSound" 	"Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" 		"Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" 	"Item.DropGemWorld" //Sound when dropping the item on death (?)
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_Type"		"FIELD_INTEGER"
-				"damage_block"		"10 20 30 40 50"
+				"var_type"		"FIELD_INTEGER"
+				"damage_block"	"7 14 21 28 35"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_health_regen"	"2 4 6 8 10"
 			}
 		}
 		
@@ -1353,32 +1490,34 @@
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
+				"Attributes" 	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK"	"%damage_block"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%bonus_health_regen"
 				}
 			}
 		}
 	}
+	//=================================================================================================================
+	// ITEM: Steel Shield Lv 4
+	//=================================================================================================================
 	"item_steel_shield_4"
 	{
-		"ID"					"2017"
+		"ID"					"2032"
 		"BaseClass"				"item_datadriven"
 		
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		"AbilityTextureName"	"item_steel_shield_4"
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
-		
-		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_steel_shield"
 		
 		"ItemCost"				"250"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
 		"ItemDroppable"			"1"
-		"ItemDeclarations"		"DECLARE_PURCHASES_TO_SPECTATORS"
-		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_NEVER"
-		
 		
 		"ItemShareability"		"ITEM_NOT_SHAREABLE"
 		
@@ -1386,19 +1525,24 @@
 		"ItemBaseLevel"			"4"
 		
 		"ItemShopTags"			"block"
-		"ItemAliases"			"block;defense"
+		"ItemAliases"			"block;defense;regen"
 		"ItemQuality"			"component"
 		
-		"UIPickupSound" 	"Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" 		"Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" 	"Item.DropGemWorld" //Sound when dropping the item on death (?)
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_Type"		"FIELD_INTEGER"
-				"damage_block"		"10 20 30 40 50"
+				"var_type"		"FIELD_INTEGER"
+				"damage_block"	"7 14 21 28 35"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_health_regen"	"2 4 6 8 10"
 			}
 		}
 		
@@ -1408,32 +1552,34 @@
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
+				"Attributes" 	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK"	"%damage_block"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%bonus_health_regen"
 				}
 			}
 		}
 	}
+	//=================================================================================================================
+	// ITEM: Steel Shield Lv 5
+	//=================================================================================================================
 	"item_steel_shield_5"
 	{
-		"ID"					"2018"
+		"ID"					"2034"
 		"BaseClass"				"item_datadriven"
 		
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+		"AbilityTextureName"	"item_steel_shield_5"
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
-		
-		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"	"item_steel_shield"
 		
 		"ItemCost"				"250"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
 		"ItemDroppable"			"1"
-		"ItemDeclarations"		"DECLARE_PURCHASES_TO_SPECTATORS"
-		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_NEVER"
-		
 		
 		"ItemShareability"		"ITEM_NOT_SHAREABLE"
 		
@@ -1441,19 +1587,24 @@
 		"ItemBaseLevel"			"5"
 		
 		"ItemShopTags"			"block"
-		"ItemAliases"			"block;defense"
+		"ItemAliases"			"block;defense;regen"
 		"ItemQuality"			"component"
 		
-		"UIPickupSound" 	"Item.PickUpRingShop" //Sound when adquiring the item
-		"UIDropSound" 		"Item.DropRecipeShop" //Sound when dropping the item manually
-		"WorldDropSound" 	"Item.DropGemWorld" //Sound when dropping the item on death (?)
+		"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+		"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+		"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_Type"		"FIELD_INTEGER"
-				"damage_block"		"10 20 30 40 50"
+				"var_type"		"FIELD_INTEGER"
+				"damage_block"	"7 14 21 28 35"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_health_regen"	"2 4 6 8 10"
 			}
 		}
 		
@@ -1463,15 +1614,15 @@
 			{
 				"Passive"		"1"
 				"IsHidden"		"1"
+				"Attributes" 	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK"	"%damage_block"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%bonus_health_regen"
 				}
 			}
 		}
 	}
-	}
-	//NEXT ITEM: ID 2037
 	//=================================================================================================================
 	// Holdout Tombstone
 	//=================================================================================================================

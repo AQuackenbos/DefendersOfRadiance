@@ -54,9 +54,9 @@
 		// Unit Names
 		
 		//DoR
-		"npc_wave_1_basic"							"Kobold Tunneler"
-		"npc_wave_1_leader"							"Kobold Leader"
-		"npc_wave_1_boss"							"Kobold Magi"
+		"npc_wave_1_basic"							"Kobold Infantry"
+		"npc_wave_1_leader"							"Kobold Chanter"
+		"npc_wave_1_boss"							"Kobold Healer"
 		
 		//Holdout
 		"npc_dota_creature_basic_zombie"			"Zombie"
@@ -102,20 +102,87 @@
 		"npc_dota_creature_treant"					"Treant"
 		"npc_dota_creature_buff_witch"				"Empowering Wraith"
 		
-		//DoR Abilities
+		//DoR Hero Abilities
+		"DOTA_Tooltip_Ability_dor_dragon_slam"									"Dragon Slam"
+		"DOTA_Tooltip_ability_dor_dragon_slam_Description"						"Slam your shield into the ground, knocking back and stunning all enemies around you."
+		"DOTA_Tooltip_ability_dor_dragon_slam_damage"							"DAMAGE:"
+		"DOTA_Tooltip_ability_dor_dragon_slam_impact_radius"					"RADIUS:"
+		"DOTA_Tooltip_ability_dor_dragon_slam_stun_duration"					"STUN DURATION:"
+		
+		"DOTA_Tooltip_Ability_elder_dragon_form_datadriven"						"Elder Dragon Form"
+		"DOTA_Tooltip_Ability_elder_dragon_form_datadriven_Description"			"New Dragon Form Description..."
+		"DOTA_Tooltip_Ability_elder_dragon_form_datadriven_duration"			"DURATION:"
+		"DOTA_Tooltip_Ability_elder_dragon_form_datadriven_bonus_attack_range"			"BONUS ATTACK RANGE:"
+		"DOTA_Tooltip_Ability_elder_dragon_form_datadriven_bonus_movement_speed"		"BONUS MOVE SPEED:"
+		
+		//Modified Core Tooltips
+		"DOTA_Tooltip_Ability_antimage_mana_break_Description"				"<font color='#FF2C2C'>[UNIQUE ATTACK MODIFIER]</font>\n\nBurns mana from the target, dealing a high amount of damage for each point of mana burned."
+		"DOTA_Tooltip_ability_antimage_mana_break_damage_per_burn"			"DAMAGE PER MANA BURNED:"
+		
+		"DOTA_Tooltip_ability_lina_luguna_blade_Note0"						"Laguna Blade deals damage without any delay."
+	
+		"DOTA_Tooltip_ability_kunkka_ghostship_note2"						"The boat has a movement speed of 650/800/950/1100."
+		
+		
+		//DoR Wave Abilities
 		"DOTA_Tooltip_Ability_npc_wave_1_leader_health_aura"					"Kobold Blood"
-		"DOTA_Tooltip_ability_npc_wave_1_leader_health_aura_Description"		"Regenerates health around the caster."
-		"DOTA_Tooltip_ability_npc_wave_1_leader_health_aura_radius"				"AURA RADIUS:"
-		"DOTA_Tooltip_ability_npc_wave_1_leader_health_aura_regen_amount"		"REGEN AMOUNT:"
+		"DOTA_Tooltip_ability_npc_wave_1_leader_health_aura_Description"		"Creates a regeneration aura around the Boss, healing his followers and himself."
+		"DOTA_Tooltip_ability_npc_wave_1_leader_health_aura_health_radius"				"AURA RADIUS:"
+		"DOTA_Tooltip_ability_npc_wave_1_leader_health_aura_health_regen_amount"		"BONUS REGEN AMOUNT:"
 		
-		"DOTA_Tooltip_aura_health_regen"										"Kobold Blood"
-		"DOTA_Tooltip_aura_health_regen_Description"							"Regenerating %MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT% HP per second."
+		"DOTA_Tooltip_wave_1_aura_health_regen"									"Kobold Blood"
+		"DOTA_Tooltip_wave_1_aura_health_regen_Description"						"Regenerating %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT% extra health per second."
 		
-		"DOTA_Tooltip_Ability_npc_wave_1_boss_bloodlust"						"Kobold Motivation"
+		"DOTA_Tooltip_Ability_npc_wave_1_boss_bloodlust"						"Kobold War Chants"
 		"DOTA_Tooltip_ability_npc_wave_1_boss_bloodlust_Description"			"Inspires a friendly unit, increasing its movement speed and attack speed."
 		"DOTA_Tooltip_ability_npc_wave_1_boss_bloodlust_bonus_movement_speed"	"BONUS MOVE SPEED:"
 		"DOTA_Tooltip_ability_npc_wave_1_boss_bloodlust_bonus_attack_speed"		"BONUS ATTACK SPEED:"
 		"DOTA_Tooltip_ability_npc_wave_1_boss_bloodlust_duration"				"DURATION:"
+		
+		//DoR Items
+		"DOTA_Tooltip_Ability_item_core_strength"							"Strength Core"
+		"DOTA_Tooltip_Ability_item_core_strength_2"							"Strength Core"
+		"DOTA_Tooltip_Ability_item_core_strength_3"							"Strength Core"
+		"DOTA_Tooltip_Ability_item_core_strength_4"							"Strength Core"
+		"DOTA_Tooltip_Ability_item_core_strength_5"							"Strength Core"
+		"DOTA_Tooltip_ability_item_core_strength_bonus_str"					"+$str"
+		"DOTA_Tooltip_ability_item_core_strength_2_bonus_str"				"+$str"
+		"DOTA_Tooltip_ability_item_core_strength_3_bonus_str"				"+$str"
+		"DOTA_Tooltip_ability_item_core_strength_4_bonus_str"				"+$str"
+		"DOTA_Tooltip_ability_item_core_strength_5_bonus_str"				"+$str"
+		
+		"DOTA_Tooltip_Ability_item_core_agility"							"Agility Core"
+		"DOTA_Tooltip_Ability_item_core_agility_2"							"Agility Core"
+		"DOTA_Tooltip_Ability_item_core_agility_3"							"Agility Core"
+		"DOTA_Tooltip_Ability_item_core_agility_4"							"Agility Core"
+		"DOTA_Tooltip_Ability_item_core_agility_5"							"Agility Core"
+		"DOTA_Tooltip_ability_item_core_agility_bonus_agi"					"+$agi"
+		"DOTA_Tooltip_ability_item_core_agility_2_bonus_agi"				"+$agi"
+		"DOTA_Tooltip_ability_item_core_agility_3_bonus_agi"				"+$agi"
+		"DOTA_Tooltip_ability_item_core_agility_4_bonus_agi"				"+$agi"
+		"DOTA_Tooltip_ability_item_core_agility_5_bonus_agi"				"+$agi"
+		
+		"DOTA_Tooltip_Ability_item_core_intellect"							"Intelligence Core"
+		"DOTA_Tooltip_Ability_item_core_intellect_2"						"Intelligence Core"
+		"DOTA_Tooltip_Ability_item_core_intellect_3"						"Intelligence Core"
+		"DOTA_Tooltip_Ability_item_core_intellect_4"						"Intelligence Core"
+		"DOTA_Tooltip_Ability_item_core_intellect_5"						"Intelligence Core"
+		"DOTA_Tooltip_ability_item_core_intellect_bonus_int"				"+$int"
+		"DOTA_Tooltip_ability_item_core_intellect_2_bonus_int"				"+$int"
+		"DOTA_Tooltip_ability_item_core_intellect_3_bonus_int"				"+$int"
+		"DOTA_Tooltip_ability_item_core_intellect_4_bonus_int"				"+$int"
+		"DOTA_Tooltip_ability_item_core_intellect_5_bonus_int"				"+$int"
+		
+		"DOTA_Tooltip_Ability_item_steel_shield"							"Steel Shield"
+		"DOTA_Tooltip_Ability_item_steel_shield_2"							"Steel Shield"
+		"DOTA_Tooltip_Ability_item_steel_shield_3"							"Steel Shield"
+		"DOTA_Tooltip_Ability_item_steel_shield_4"							"Steel Shield"
+		"DOTA_Tooltip_Ability_item_steel_shield_5"							"Steel Shield"
+		"DOTA_Tooltip_Ability_item_steel_shield_damage_block"				"DAMAGE BLOCK:"
+		"DOTA_Tooltip_Ability_item_steel_shield_2_damage_block"				"DAMAGE BLOCK:"
+		"DOTA_Tooltip_Ability_item_steel_shield_3_damage_block"				"DAMAGE BLOCK:"
+		"DOTA_Tooltip_Ability_item_steel_shield_4_damage_block"				"DAMAGE BLOCK:"
+		"DOTA_Tooltip_Ability_item_steel_shield_5_damage_block"				"DAMAGE BLOCK:"
 		
 		// Creature Ability Names
 		"DOTA_Tooltip_Ability_creature_acid_spray"							"Burst"
@@ -173,10 +240,6 @@
 		"DOTA_Tooltip_tower_fortification_modifier"							"Fortification"
 		"DOTA_Tooltip_creature_slithereen_crush_slow"						"Stunned"
 		
-		// Tower Names
-		"npc_dota_holdout_tower"						"Tower"
-		"npc_dota_holdout_tower_spawn_protection"		"Tower"
-		"npc_dota_defender_fort"						"Defender's Ancient"
 		
 		"DOTA_Holdout_Round_Kobolds_Quest_Title"		"Round %quest_round%%quest_extra_text% Invaders Defeated"
 		"DOTA_Holdout_Round_Zombies_Quest_Title"		"Round %quest_round%%quest_extra_text% Invaders Defeated"
@@ -204,74 +267,14 @@
 		"DOTA_Holdout_Round_Gyrocopter"					"Danger Zone"
 		"DOTA_Holdout_Round_StayFrosty_Title"			"Stay Frosty!"
 
-		"DOTA_Tooltip_ability_item_greater_clarity"						"Greater Clarity"
-		"DOTA_Tooltip_ability_item_greater_clarity_Note0"				"Greater Clarity is shareable."
-		"DOTA_Tooltip_ability_item_greater_clarity_Lore"				"Clear water that enhances the ability to meditate."
-		"DOTA_Tooltip_ability_item_greater_clarity_total_mana"			"MANA RESTORED:"
-		"DOTA_Tooltip_ability_item_greater_clarity_buff_duration"		"DURATION:"
-		"DOTA_Tooltip_modifier_item_greater_clarity"							"Greater Clarity"
-		"DOTA_Tooltip_modifier_item_greater_clarity_Description"				"Restoring 15 mana per second"
-
-		"DOTA_Tooltip_ability_item_flask2"										"Healing Salve"
-		"DOTA_Tooltip_ability_item_flask2_Description"							"Use: Regenerate - Restores HP over time.  If the user is attacked, the effect is lost."
-		"DOTA_Tooltip_ability_item_flask2_Lore"								"A magical salve that can quickly mend even the deepest of wounds."
-		"DOTA_Tooltip_ability_item_flask2_Note0"								"Flask is shareable."
-		"DOTA_Tooltip_ability_item_flask2_total_health"							"HEALTH RESTORED:"
-		"DOTA_Tooltip_ability_item_flask2_buff_duration"							"DURATION:"
-		
-
-		"DOTA_Tooltip_Ability_item_greater_salve"						"Greater Salve"
-		"DOTA_Tooltip_Ability_item_greater_salve_Description"						"Use: Regenerate - Restores HP over time.  If the user is attacked, the effect is lost."
-		"DOTA_Tooltip_Ability_item_greater_salve_Lore"								"A magical salve that can quickly mend even the deepest of wounds."
-		"DOTA_Tooltip_Ability_item_greater_salve_Note0"								"Flask is shareable."
-		"DOTA_Tooltip_Ability_item_greater_salve_total_hp"							"HEALTH RESTORED:"
-		"DOTA_Tooltip_Ability_item_greater_salve_buff_duration"						"DURATION:"
-		"DOTA_Tooltip_modifier_item_greater_salve"						"Greater Salve"
-		"DOTA_Tooltip_modifier_item_greater_salve_Description"			"Gaining 100 HP per second."
-
-
-		"DOTA_Tooltip_Ability_item_slippers_of_halcyon"					"Slippers of Halcyon"
-		"DOTA_Tooltip_Ability_item_slippers_of_halcyon_Description"		"Active - Meditate: While channeling, causes healing over time for all friendly units and towers in the area."
-		"DOTA_Tooltip_Ability_item_slippers_of_halcyon_bonus_movement"	"+$move_speed"
-		"DOTA_Tooltip_ability_item_slippers_of_halcyon_bonus_armor"					"+$armor"
-		"DOTA_Tooltip_ability_item_slippers_of_halcyon_bonus_hp"			"+$health"
-		"DOTA_Tooltip_Ability_item_slippers_of_halcyon_radius"			"RADIUS:"
-		"DOTA_Tooltip_Ability_item_slippers_of_halcyon_hp_per_tick"		"HEAL PER TICK:"
-		"DOTA_Tooltip_Ability_item_slippers_of_halcyon_tick_rate"		"TICK RATE:"
-		"DOTA_Tooltip_ability_item_slippers_of_halcyon_duration"		"DURATION:"
-		"DOTA_Tooltip_modifier_slippers_of_halcyon_caster"							"Slippers of Halcyon"
-		"DOTA_Tooltip_modifier_slippers_of_halcyon_caster_Description"				"Healing friendly units and buildings."
-
-		"DOTA_Tooltip_Ability_item_arcane_boots2"							"Arcane Boots II"
-		"DOTA_Tooltip_ability_item_arcane_boots2_Description"					"Active: Replenish Mana - Restores mana in an area around the hero.\n\nFlat movement speed bonuses from multiple pairs of boots do not stack."
-		"DOTA_Tooltip_ability_item_arcane_boots2_Lore"						"Magi equipped with these boots are valued in battle."
-		"DOTA_Tooltip_ability_item_arcane_boots2_Note0"							"Does not work on Meepo clones."
-		"DOTA_Tooltip_ability_item_arcane_boots2_replenish_amount"				"MANA RESTORED:"
-		"DOTA_Tooltip_ability_item_arcane_boots2_bonus_movement"					"+$move_speed"
-		"DOTA_Tooltip_ability_item_arcane_boots2_bonus_mana"						"+$mana"	
-
-		"DOTA_Tooltip_ability_item_upgraded_mortar"						"Upgraded Mortar"
-		"DOTA_Tooltip_ability_item_upgraded_mortar_Description"			"Applies a permanent damage upgrade to the target tower."
-		"DOTA_Tooltip_ability_item_upgraded_mortar_bonus_per_upgrade"	"BONUS DAMAGE:"
-		"DOTA_Tooltip_ability_item_upgraded_barricade"					"Upgraded Barricade"
-		"DOTA_Tooltip_ability_item_upgraded_barricade_Description"			"Applies a permanent armor and hitpoint upgrade to the target tower."
-		"DOTA_Tooltip_ability_item_upgraded_barricade_hp_bonus_per_upgrade"		"BONUS HP:"
-		"DOTA_Tooltip_ability_item_upgraded_barricade_armor_bonus_per_upgrade"	"BONUS ARMOR:"
-		"DOTA_Tooltip_ability_item_book_of_intelligence"					"Scroll of Intelligence"
-		"DOTA_Tooltip_ability_item_book_of_intelligence_Description"		"Grants a permanent 5 Intelligence boost."
-		"DOTA_Tooltip_ability_item_book_of_strength"						"Scroll of Strength"
-		"DOTA_Tooltip_ability_item_book_of_strength_Description"			"Grants a permanent 5 Strength boost."
-		"DOTA_Tooltip_ability_item_book_of_agility"							"Scroll of Agility"
-		"DOTA_Tooltip_ability_item_book_of_agility_Description"				"Grants a permanent 5 Agility boost."
-
 		"DOTA_Tooltip_ability_item_tombstone"								"Resurrect Teammate"
 		"DOTA_Chat_Tombstone_Pinged"										"[ALLIES] Fallen teammate here."
 
 		"DOTA_Tooltip_ability_item_helm_of_the_dominator_Description"			"Passive: Lifesteal - Gives lifesteal on attacks.\n\nHelm of the Dominator is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
 		"DOTA_Tooltip_ability_item_helm_of_the_dominator_Note0"					""
 		
-		"DOTA_Tooltip_ability_item_shivas_guard_Description"					"Active: Arctic Blast - Emits a freezing wave that damages enemies and slows their movement for a short time.\nPassive: Freezing Aura - Reduces attack speed on enemies.\n\nMultiple instances of Freezing Aura do not stack."
-
+		//Holdout Ability Default Tooltips
+		
 		"DOTA_Tooltip_ability_keeper_of_the_light_mana_overload"					"Mana Overload"
 		"DOTA_Tooltip_ability_keeper_of_the_light_mana_overload_Description"		"Assaults an enemy with pure magical essence, causing heavy damage. If they die during the assault, they energy will burst forth, damaging all nearby enemies."
 		"DOTA_Tooltip_ability_keeper_of_the_light_mana_overload_Lore"				"Ezalor calls upon Primordial harmony, overwhelming his enemies with its power."
