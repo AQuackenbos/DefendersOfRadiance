@@ -1,11 +1,16 @@
+//=================================================================================================================
+// ITEM: Agility Core Lv 5
+//=================================================================================================================
 "item_core_agility_5"
 {
-	"ID"			"2036"
-	"BaseClass"		"item_datadriven"
+	"ID"					"2025"
+	"BaseClass"				"item_datadriven"
+	
 	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
 	"AbilityTextureName"	"item_core_agility_5"
-	"Model"							"models/props_gameplay/red_box.vmdl" 
-	"Effect"						"particles/generic_gameplay/dropped_item.vpcf"
+	"Model"					"models/props_gameplay/red_box.vmdl" 
+	"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 	
 	"ItemCost"				"250"
 	"ItemKillable"			"0"
@@ -22,16 +27,16 @@
 	"ItemAliases"			"agility;agi;core"
 	"ItemQuality"			"component"
 	
-	"UIPickupSound" "Item.PickUpRingShop" //Sound when adquiring the item
-	"UIDropSound" "Item.DropRecipeShop" //Sound when dropping the item manually
-	"WorldDropSound" "Item.DropGemWorld" //Sound when dropping the item on death (?)
+	"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+	"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+	"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
 
 	"AbilitySpecial"
 	{
 		"01"
 		{
-			"var_Type"		"FIELD_INTEGER"
-			"bonus_agi"		"10 20 30 40 50"
+			"var_type"	"FIELD_INTEGER"
+			"bonus_agi"	"10 20 40 80 160"
 		}
 	}
 	
@@ -41,10 +46,10 @@
 		{
 			"Passive"		"1"
 			"IsHidden"		"1"
-			"Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
+			"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 			"Properties"
 			{
-				"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_agi"
+				"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_str"
 			}
 		}
 	}

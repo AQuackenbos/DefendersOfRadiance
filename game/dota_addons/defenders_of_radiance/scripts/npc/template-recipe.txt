@@ -1,27 +1,27 @@
 //=================================================================================================================
-// RECIPE: Steel Shield Lv 2
+// RECIPE: __NAME__
 //=================================================================================================================
-"item_recipe_steel_shield_2"
+"__IDENTIFIER__"
 {
-	"ID"							"2029"
+	"ID"							"__ID__"
 	// General
 	//-------------------------------------------------------------------------------------------------------------
 	"Model"							"models/props_gameplay/recipe.mdl"
 	"BaseClass"						"item_datadriven"
-	"AbilityTextureName"			"item_steel_shield_2"
+	"AbilityTextureName"			"__ITEM_IDENTIFIER__"
 
 	
 	// Item Info
 	//-------------------------------------------------------------------------------------------------------------
-	"ItemCost"						"250"	
-	"ItemShopTags"					"block"
+	"ItemCost"						"__COST__"	
+	"ItemShopTags"					"__TAGS__"
 		
 	// Recipe
 	//-------------------------------------------------------------------------------------------------------------
 	"ItemRecipe"					"1"
-	"ItemResult"					"item_steel_shield_2"
+	"ItemResult"					"__ITEM_IDENTIFIER__"
 	"ItemRequirements"
 	{
-		"01"						"item_steel_shield"
+		"01"						"__PREVIOUS_IDENTIFIER__"
 	}
 }	

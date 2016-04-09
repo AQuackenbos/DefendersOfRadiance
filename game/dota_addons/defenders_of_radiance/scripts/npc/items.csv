@@ -1,0 +1,65 @@
+"Identifier","Name","Lvls","Tags","Aliases","Quality","Cost","AbilitySpecial","Modifiers"
+"core_strength","Strength Core",5,"str","strength;str;core","component",250,"""01""
+{
+	""var_type""	""FIELD_INTEGER""
+	""bonus_str""	""10 20 40 80 160""
+}
+","""modifier_item_core_strength""
+{
+	""Passive""		""1""
+	""IsHidden""		""1""
+	""Attributes""	""MODIFIER_ATTRIBUTE_MULTIPLE""
+	""Properties""
+	{
+		""MODIFIER_PROPERTY_STATS_STRENGTH_BONUS""	""%bonus_str""
+	}
+}
+"
+"core_intellect","Intellect Core",5,"int","intellect;int;core","component",250,"""01""
+{
+	""var_type""	""FIELD_INTEGER""
+	""bonus_int""	""10 20 40 80 160""
+}","""modifier_item_core_intellect""
+{
+	""Passive""		""1""
+	""IsHidden""		""1""
+	""Attributes""	""MODIFIER_ATTRIBUTE_MULTIPLE""
+	""Properties""
+	{
+		""MODIFIER_PROPERTY_STATS_INTELLECT_BONUS""	""%bonus_str""
+	}
+}"
+"core_agility","Agility Core",5,"agi","agility;agi;core","component",250,"""01""
+{
+	""var_type""	""FIELD_INTEGER""
+	""bonus_agi""	""10 20 40 80 160""
+}","""modifier_item_core_agility""
+{
+	""Passive""		""1""
+	""IsHidden""		""1""
+	""Attributes""	""MODIFIER_ATTRIBUTE_MULTIPLE""
+	""Properties""
+	{
+		""MODIFIER_PROPERTY_STATS_AGILITY_BONUS""	""%bonus_str""
+	}
+}"
+"steel_shield","Steel Shield","5","block","block;defense;regen","component","250","""01""
+{
+	""var_type""		""FIELD_INTEGER""
+	""damage_block""	""7 14 21 28 35""
+}
+""02""
+{
+	""var_type""			""FIELD_INTEGER""
+	""bonus_health_regen""	""2 4 6 8 10""
+}","""modifier_item_steel_shield""
+{
+	""Passive""		""1""
+	""IsHidden""		""1""
+	""Attributes"" 	""MODIFIER_ATTRIBUTE_MULTIPLE""
+	""Properties""
+	{
+		""MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK""	""%damage_block""
+		""MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT""	""%bonus_health_regen""
+	}
+}"
