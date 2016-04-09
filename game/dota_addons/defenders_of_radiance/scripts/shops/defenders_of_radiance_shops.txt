@@ -28,18 +28,19 @@
 	
 	}	
 
-	// Level 1 - Green Recipes
+	// Mid Tier Items
 	"basics"
 	{
    
 	}
 
-	// Level 2 - Blue Recipes
+	// High Tier Items
 	"support"
 	{
   
 	}
 
+	//Boss Drops
 	"magics"
 	{
 	
