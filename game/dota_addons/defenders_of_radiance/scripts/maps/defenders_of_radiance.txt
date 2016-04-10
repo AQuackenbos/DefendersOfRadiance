@@ -124,7 +124,5 @@
 			"SpawnerName"			"spawner_right"
 			"Waypoint"				"path_invader4_1"
 		}
-	}
-	
 	}	
 }

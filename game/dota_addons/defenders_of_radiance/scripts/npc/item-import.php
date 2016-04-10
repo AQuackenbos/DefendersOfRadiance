@@ -49,7 +49,7 @@ while(($data = fgetcsv($file)) !== false)
 	$tags 		= $data[3];
 	$aliases 	= $data[4];
 	$quality 	= $data[5];
-	$cost		= $data[6];
+	$cost		= explode(',',$data[6]);
 	$ability	= str_replace("\n","\n".$blockPrefix,$data[7]);
 	$modifiers	= str_replace("\n","\n".$blockPrefix,$data[8]);
 	
@@ -66,10 +66,30 @@ while(($data = fgetcsv($file)) !== false)
 		
 		$id			= $_CURRENT_ID++;
 		
+		$itemCost	= 0;
+		$recipeCost	= 0;
+		switch(count($cost))
+		{
+			case 1: //single cost
+				$itemCost = $cost[0] * $currLevel;
+				$recipeCost = $cost[0];
+				break;
+			case 2: //item + recipe cost
+				$itemCost = $cost[0] + ($cost[1] * ($currLevel-1));
+				$recipeCost = $cost[1];
+				break;
+			default: //cumulative cost for each level
+				$itemCost = $cost[$currLevel-1];
+				if($currLevel > 1)
+				{
+					$recipeCost = $cost[$currLevel-1] - $cost[$currLevel-2];
+				}
+		}
+		
 		$itemFile	= $itemPath.DS.$identifier.'.txt';
 		$itemText	= str_replace(
 			array('__NAME__','__ID__','__IDENTIFIER__','__COST__','__MAXLEVEL__','__LEVEL__','__TAGS__','__ALIASES__','__QUALITY__','__ABILITY__','__MODIFIERS__'),
-			array($name.' Lv '.$currLevel,$id,$identifier,$cost,$max,$currLevel,$tags,$aliases,$quality,$ability,$modifiers),
+			array($name.' Lv '.$currLevel,$id,$identifier,$itemCost,$max,$currLevel,$tags,$aliases,$quality,$ability,$modifiers),
 			$_ITEM_TEMPLATE);
 		
 		file_put_contents($itemFile,$itemText);
@@ -92,7 +112,7 @@ while(($data = fgetcsv($file)) !== false)
 		$recipeFile	= $itemPath.DS.$identifier.'.txt';
 		$recipeText	= str_replace(
 			array('__NAME__','__ID__','__IDENTIFIER__','__ITEM_IDENTIFIER__','__COST__','__TAGS__','__PREVIOUS_IDENTIFIER__'),
-			array($name.' Lv '.$currLevel,$id,$identifier,$itemIdentifier,$cost,$tags,$previousIdentifier),
+			array($name.' Lv '.$currLevel,$id,$identifier,$itemIdentifier,$recipeCost,$tags,$previousIdentifier),
 			$_RECIPE_TEMPLATE);
 			
 		file_put_contents($recipeFile,$recipeText);

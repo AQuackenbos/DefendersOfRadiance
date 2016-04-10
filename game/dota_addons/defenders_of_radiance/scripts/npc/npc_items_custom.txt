@@ -101,7 +101,7 @@
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
-		"ItemCost"				"250"
+		"ItemCost"				"1250"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
@@ -157,7 +157,7 @@
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
-		"ItemCost"				"250"
+		"ItemCost"				"3250"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
@@ -213,7 +213,7 @@
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
-		"ItemCost"				"250"
+		"ItemCost"				"6250"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
@@ -269,7 +269,7 @@
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
-		"ItemCost"				"250"
+		"ItemCost"				"10250"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
@@ -381,7 +381,7 @@
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
-		"ItemCost"				"250"
+		"ItemCost"				"1250"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
@@ -437,7 +437,7 @@
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
-		"ItemCost"				"250"
+		"ItemCost"				"3250"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
@@ -493,7 +493,7 @@
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
-		"ItemCost"				"250"
+		"ItemCost"				"6250"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
@@ -549,7 +549,7 @@
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
-		"ItemCost"				"250"
+		"ItemCost"				"10250"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
@@ -663,7 +663,7 @@
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
-		"ItemCost"				"250"
+		"ItemCost"				"1250"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
@@ -721,7 +721,7 @@
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
-		"ItemCost"				"250"
+		"ItemCost"				"3250"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
@@ -779,7 +779,7 @@
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
-		"ItemCost"				"250"
+		"ItemCost"				"6250"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
@@ -837,7 +837,7 @@
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
-		"ItemCost"				"250"
+		"ItemCost"				"10250"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
@@ -896,7 +896,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"250"	
+		"ItemCost"						"1000"	
 		"ItemShopTags"					"agi"
 			
 		// Recipe
@@ -923,7 +923,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"250"	
+		"ItemCost"						"2000"	
 		"ItemShopTags"					"agi"
 			
 		// Recipe
@@ -950,7 +950,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"250"	
+		"ItemCost"						"3000"	
 		"ItemShopTags"					"agi"
 			
 		// Recipe
@@ -977,7 +977,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"250"	
+		"ItemCost"						"4000"	
 		"ItemShopTags"					"agi"
 			
 		// Recipe
@@ -1004,7 +1004,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"250"	
+		"ItemCost"						"1000"	
 		"ItemShopTags"					"int"
 			
 		// Recipe
@@ -1031,7 +1031,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"250"	
+		"ItemCost"						"2000"	
 		"ItemShopTags"					"int"
 			
 		// Recipe
@@ -1058,7 +1058,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"250"	
+		"ItemCost"						"3000"	
 		"ItemShopTags"					"int"
 			
 		// Recipe
@@ -1085,7 +1085,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"250"	
+		"ItemCost"						"4000"	
 		"ItemShopTags"					"int"
 			
 		// Recipe
@@ -1112,7 +1112,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"250"	
+		"ItemCost"						"1000"	
 		"ItemShopTags"					"str"
 			
 		// Recipe
@@ -1139,7 +1139,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"250"	
+		"ItemCost"						"2000"	
 		"ItemShopTags"					"str"
 			
 		// Recipe
@@ -1166,7 +1166,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"250"	
+		"ItemCost"						"3000"	
 		"ItemShopTags"					"str"
 			
 		// Recipe
@@ -1193,7 +1193,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"250"	
+		"ItemCost"						"4000"	
 		"ItemShopTags"					"str"
 			
 		// Recipe
@@ -1220,7 +1220,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"250"	
+		"ItemCost"						"500"	
 		"ItemShopTags"					"block"
 			
 		// Recipe
@@ -1247,7 +1247,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"250"	
+		"ItemCost"						"500"	
 		"ItemShopTags"					"block"
 			
 		// Recipe
@@ -1274,7 +1274,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"250"	
+		"ItemCost"						"500"	
 		"ItemShopTags"					"block"
 			
 		// Recipe
@@ -1301,7 +1301,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"250"	
+		"ItemCost"						"500"	
 		"ItemShopTags"					"block"
 			
 		// Recipe
@@ -1389,7 +1389,7 @@
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
-		"ItemCost"				"250"
+		"ItemCost"				"750"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
@@ -1451,7 +1451,7 @@
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
-		"ItemCost"				"250"
+		"ItemCost"				"1250"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
@@ -1513,7 +1513,7 @@
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
-		"ItemCost"				"250"
+		"ItemCost"				"1750"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
@@ -1575,7 +1575,7 @@
 		"Model"					"models/props_gameplay/red_box.vmdl" 
 		"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
 		
-		"ItemCost"				"250"
+		"ItemCost"				"2250"
 		"ItemKillable"			"0"
 		"ItemSellable"			"1"
 		"ItemPurchasable"		"1"
