@@ -1,4 +1,4 @@
-"Identifier","Name","Lvls","Tags","Aliases","Quality","Cost","AbilitySpecial","Modifiers"
+"Identifier","Name","Lvls","Tags","Aliases","Quality","Cost","AbilitySpecial","Modifiers","Additional"
 "core_strength","Strength Core",5,"str","strength;str;core","component","250,1250,3250,6250,10250","""01""
 {
 	""var_type""	""FIELD_INTEGER""
@@ -14,7 +14,7 @@
 		""MODIFIER_PROPERTY_STATS_STRENGTH_BONUS""	""%bonus_str""
 	}
 }
-"
+",""
 "core_intellect","Intellect Core",5,"int","intellect;int;core","component","250,1250,3250,6250,10250","""01""
 {
 	""var_type""	""FIELD_INTEGER""
@@ -28,7 +28,7 @@
 	{
 		""MODIFIER_PROPERTY_STATS_INTELLECT_BONUS""	""%bonus_str""
 	}
-}"
+}",""
 "core_agility","Agility Core",5,"agi","agility;agi;core","component","250,1250,3250,6250,10250","""01""
 {
 	""var_type""	""FIELD_INTEGER""
@@ -42,7 +42,7 @@
 	{
 		""MODIFIER_PROPERTY_STATS_AGILITY_BONUS""	""%bonus_str""
 	}
-}"
+}",""
 "steel_shield","Steel Shield","5","block","block;defense;regen","component","250,500","""01""
 {
 	""var_type""		""FIELD_INTEGER""
@@ -62,4 +62,4 @@
 		""MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK""	""%damage_block""
 		""MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT""	""%bonus_health_regen""
 	}
-}"
+}",""

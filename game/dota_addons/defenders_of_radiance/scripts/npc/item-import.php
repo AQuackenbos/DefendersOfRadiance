@@ -52,6 +52,7 @@ while(($data = fgetcsv($file)) !== false)
 	$cost		= explode(',',$data[6]);
 	$ability	= str_replace("\n","\n".$blockPrefix,$data[7]);
 	$modifiers	= str_replace("\n","\n".$blockPrefix,$data[8]);
+	$addl		= $data[9];
 	
 	echo 'Writing Item: '.$name."\n";
 	for($currLevel = 1; $currLevel <= $max; $currLevel++)
@@ -88,8 +89,8 @@ while(($data = fgetcsv($file)) !== false)
 		
 		$itemFile	= $itemPath.DS.$identifier.'.txt';
 		$itemText	= str_replace(
-			array('__NAME__','__ID__','__IDENTIFIER__','__COST__','__MAXLEVEL__','__LEVEL__','__TAGS__','__ALIASES__','__QUALITY__','__ABILITY__','__MODIFIERS__'),
-			array($name.' Lv '.$currLevel,$id,$identifier,$itemCost,$max,$currLevel,$tags,$aliases,$quality,$ability,$modifiers),
+			array('__NAME__','__ID__','__IDENTIFIER__','__COST__','__MAXLEVEL__','__LEVEL__','__TAGS__','__ALIASES__','__QUALITY__','__ABILITY__','__MODIFIERS__','__ADDITIONAL__'),
+			array($name.' Lv '.$currLevel,$id,$identifier,$itemCost,$max,$currLevel,$tags,$aliases,$quality,$ability,$modifiers,$addl),
 			$_ITEM_TEMPLATE);
 		
 		file_put_contents($itemFile,$itemText);
