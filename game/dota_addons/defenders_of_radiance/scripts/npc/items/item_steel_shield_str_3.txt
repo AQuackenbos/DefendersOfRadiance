@@ -1,0 +1,71 @@
+//=================================================================================================================
+// ITEM: Steel Shield (STR) Lv 3
+//=================================================================================================================
+"item_steel_shield_str_3"
+{
+	"ID"					"2030"
+	"BaseClass"				"item_datadriven"
+	
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
+	"AbilityTextureName"	"item_steel_shield_3"
+	"Model"					"models/props_gameplay/red_box.vmdl" 
+	"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
+	
+	"ItemCost"				"1250"
+	"ItemKillable"			"0"
+	"ItemSellable"			"1"
+	"ItemPurchasable"		"1"
+	"ItemDroppable"			"1"
+	
+	"ItemShareability"		"ITEM_NOT_SHAREABLE"
+	
+	"MaxUpgradeLevel"		"5"
+	"ItemBaseLevel"			"3"
+	
+	"ItemShopTags"			"block"
+	"ItemAliases"			"block;defense;regen"
+	"ItemQuality"			"component"
+	
+	"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+	"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+	"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"		"FIELD_INTEGER"
+			"damage_block"	"7 14 21 28 35"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"bonus_health_regen"	"2 4 6 8 10"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"bonus_str"			"4 8 12 16 20"
+		}
+	}
+	
+	"Modifiers"
+	{
+		"modifier_item_steel_shield_str"
+		{
+			"Passive"		"1"
+			"IsHidden"		"1"
+			"Attributes" 	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK"	"%damage_block"
+				"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%bonus_health_regen"
+				"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_str"
+			}
+		}
+	}
+	
+
+
+}

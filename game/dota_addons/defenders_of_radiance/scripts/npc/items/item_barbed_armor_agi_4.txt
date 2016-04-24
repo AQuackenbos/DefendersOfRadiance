@@ -1,0 +1,71 @@
+//=================================================================================================================
+// ITEM: Barbed Armor (AGI) Lv 4
+//=================================================================================================================
+"item_barbed_armor_agi_4"
+{
+	"ID"					"2050"
+	"BaseClass"				"item_datadriven"
+	
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
+	"AbilityTextureName"	"item_barbed_armor_4"
+	"Model"					"models/props_gameplay/red_box.vmdl" 
+	"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
+	
+	"ItemCost"				"1750"
+	"ItemKillable"			"0"
+	"ItemSellable"			"1"
+	"ItemPurchasable"		"1"
+	"ItemDroppable"			"1"
+	
+	"ItemShareability"		"ITEM_NOT_SHAREABLE"
+	
+	"MaxUpgradeLevel"		"5"
+	"ItemBaseLevel"			"4"
+	
+	"ItemShopTags"			"armor"
+	"ItemAliases"			"defense;attack"
+	"ItemQuality"			"component"
+	
+	"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+	"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+	"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"		"FIELD_INTEGER"
+			"bonus_armor"	"5 9 14 19 24"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"bonus_damage"	"12 20 28 36 44"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"bonus_agi"			"4 8 12 16 20"
+		}
+	}
+	
+	"Modifiers"
+	{
+		"modifier_item_barbed_armor_agi"
+		{
+			"Passive"		"1"
+			"IsHidden"		"1"
+			"Attributes" 	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%bonus_armor"
+				"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"%bonus_damage"
+				"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_agi"
+			}
+		}
+	}
+	
+
+
+}

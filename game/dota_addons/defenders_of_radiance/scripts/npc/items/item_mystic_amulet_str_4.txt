@@ -1,0 +1,71 @@
+//=================================================================================================================
+// ITEM: Mystic Amulet (STR) Lv 4
+//=================================================================================================================
+"item_mystic_amulet_str_4"
+{
+	"ID"					"2059"
+	"BaseClass"				"item_datadriven"
+	
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
+	"AbilityTextureName"	"item_mystic_amulet_4"
+	"Model"					"models/props_gameplay/red_box.vmdl" 
+	"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
+	
+	"ItemCost"				"1750"
+	"ItemKillable"			"0"
+	"ItemSellable"			"1"
+	"ItemPurchasable"		"1"
+	"ItemDroppable"			"1"
+	
+	"ItemShareability"		"ITEM_NOT_SHAREABLE"
+	
+	"MaxUpgradeLevel"		"5"
+	"ItemBaseLevel"			"4"
+	
+	"ItemShopTags"			"magic"
+	"ItemAliases"			"mp;evasion;mana"
+	"ItemQuality"			"component"
+	
+	"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+	"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+	"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"		"FIELD_INTEGER"
+			"evasion_pct"	"10 13 16 19 22"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"bonus_mana"	"80 160 240 320 400"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"bonus_str"			"4 8 12 16 20"
+		}
+	}
+	
+	"Modifiers"
+	{
+		"modifier_item_mystic_amulet_str"
+		{
+			"Passive"		"1"
+			"IsHidden"		"1"
+			"Attributes" 	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_EVASION_CONSTANT"	"%evasion_pct"
+				"MODIFIER_PROPERTY_MANA_BONUS"	"%bonus_mana"
+				"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_str"
+			}
+		}
+	}
+	
+
+
+}

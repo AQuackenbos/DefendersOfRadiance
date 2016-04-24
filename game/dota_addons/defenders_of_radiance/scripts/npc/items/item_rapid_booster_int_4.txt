@@ -1,0 +1,71 @@
+//=================================================================================================================
+// ITEM: Rapid Booster (INT) Lv 4
+//=================================================================================================================
+"item_rapid_booster_int_4"
+{
+	"ID"					"2104"
+	"BaseClass"				"item_datadriven"
+	
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
+	"AbilityTextureName"	"item_rapid_booster_4"
+	"Model"					"models/props_gameplay/red_box.vmdl" 
+	"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
+	
+	"ItemCost"				"1750"
+	"ItemKillable"			"0"
+	"ItemSellable"			"1"
+	"ItemPurchasable"		"1"
+	"ItemDroppable"			"1"
+	
+	"ItemShareability"		"ITEM_NOT_SHAREABLE"
+	
+	"MaxUpgradeLevel"		"5"
+	"ItemBaseLevel"			"4"
+	
+	"ItemShopTags"			"speed"
+	"ItemAliases"			"move speed;health;hp"
+	"ItemQuality"			"component"
+	
+	"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+	"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+	"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"		"FIELD_INTEGER"
+			"move_speed"	"40 44 48 52 56"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"bonus_health"	"100 200 300 400 500"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"bonus_int"			"4 8 12 16 20"
+		}
+	}
+	
+	"Modifiers"
+	{
+		"modifier_item_rapid_booster_int"
+		{
+			"Passive"		"1"
+			"IsHidden"		"1"
+			"Attributes" 	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE"	"%move_speed"
+				"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+				"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_int"
+			}
+		}
+	}
+	
+
+
+}

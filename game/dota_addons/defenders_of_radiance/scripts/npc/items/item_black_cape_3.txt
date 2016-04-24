@@ -1,0 +1,65 @@
+//=================================================================================================================
+// ITEM: Black Cape Lv 3
+//=================================================================================================================
+"item_black_cape_3"
+{
+	"ID"					"2116"
+	"BaseClass"				"item_datadriven"
+	
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
+	"AbilityTextureName"	"item_black_cape_3"
+	"Model"					"models/props_gameplay/red_box.vmdl" 
+	"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
+	
+	"ItemCost"				"4000"
+	"ItemKillable"			"0"
+	"ItemSellable"			"1"
+	"ItemPurchasable"		"1"
+	"ItemDroppable"			"1"
+	
+	"ItemShareability"		"ITEM_NOT_SHAREABLE"
+	
+	"MaxUpgradeLevel"		"3"
+	"ItemBaseLevel"			"3"
+	
+	"ItemShopTags"			"regen"
+	"ItemAliases"			"hp regen;mana regen"
+	"ItemQuality"			"component"
+	
+	"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+	"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+	"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"		"FIELD_INTEGER"
+			"hp_regen"		"10 15 20"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"mana_regen_pct"		"220 330 440"
+		}
+	}
+	
+	"Modifiers"
+	{
+		"modifier_item_black_cape"
+		{
+			"Passive"		"1"
+			"IsHidden"		"1"
+			"Attributes" 	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%hp_regen"
+				"MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE"	"%mana_regen_pct"
+			}
+		}
+	}
+	
+
+
+}

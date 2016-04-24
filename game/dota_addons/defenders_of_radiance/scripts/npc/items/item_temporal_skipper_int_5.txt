@@ -1,0 +1,71 @@
+//=================================================================================================================
+// ITEM: Temporal Skipper (INT) Lv 5
+//=================================================================================================================
+"item_temporal_skipper_int_5"
+{
+	"ID"					"2088"
+	"BaseClass"				"item_datadriven"
+	
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
+	"AbilityTextureName"	"item_temporal_skipper_5"
+	"Model"					"models/props_gameplay/red_box.vmdl" 
+	"Effect"				"particles/generic_gameplay/dropped_item.vpcf"
+	
+	"ItemCost"				"2250"
+	"ItemKillable"			"0"
+	"ItemSellable"			"1"
+	"ItemPurchasable"		"1"
+	"ItemDroppable"			"1"
+	
+	"ItemShareability"		"ITEM_NOT_SHAREABLE"
+	
+	"MaxUpgradeLevel"		"5"
+	"ItemBaseLevel"			"5"
+	
+	"ItemShopTags"			"speed"
+	"ItemAliases"			"attack speed;mana regen"
+	"ItemQuality"			"component"
+	
+	"UIPickupSound"			"Item.PickUpRingShop"	//Sound when acquiring the item
+	"UIDropSound"			"Item.DropRecipeShop"	//Sound when dropping the item manually
+	"WorldDropSound"		"Item.DropGemWorld"		//Sound when dropping the item otherwise
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"		"FIELD_INTEGER"
+			"mana_regen_pct"	"60 100 140 180 220"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"attack_speed"	"20 35 50 65 80"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"bonus_int"			"4 8 12 16 20"
+		}
+	}
+	
+	"Modifiers"
+	{
+		"modifier_item_temporal_skipper_int"
+		{
+			"Passive"		"1"
+			"IsHidden"		"1"
+			"Attributes" 	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE"	"%mana_regen_pct"
+				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%attack_speed"
+				"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_int"
+			}
+		}
+	}
+	
+
+
+}

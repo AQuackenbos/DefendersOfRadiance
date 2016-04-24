@@ -26,7 +26,7 @@
 	""Attributes""	""MODIFIER_ATTRIBUTE_MULTIPLE""
 	""Properties""
 	{
-		""MODIFIER_PROPERTY_STATS_INTELLECT_BONUS""	""%bonus_str""
+		""MODIFIER_PROPERTY_STATS_INTELLECT_BONUS""	""%bonus_int""
 	}
 }",""
 "core_agility","Agility Core",5,"agi","agility;agi;core","component","250,1250,3250,6250,10250","""01""
@@ -40,10 +40,10 @@
 	""Attributes""	""MODIFIER_ATTRIBUTE_MULTIPLE""
 	""Properties""
 	{
-		""MODIFIER_PROPERTY_STATS_AGILITY_BONUS""	""%bonus_str""
+		""MODIFIER_PROPERTY_STATS_AGILITY_BONUS""	""%bonus_agi""
 	}
 }",""
-"steel_shield","Steel Shield","5","block","block;defense;regen","component","250,500","""01""
+"steel_shield_str","Steel Shield (STR)","5","block","block;defense;regen","component","250,500","""01""
 {
 	""var_type""		""FIELD_INTEGER""
 	""damage_block""	""7 14 21 28 35""
@@ -52,7 +52,12 @@
 {
 	""var_type""			""FIELD_INTEGER""
 	""bonus_health_regen""	""2 4 6 8 10""
-}","""modifier_item_steel_shield""
+}
+""03""
+{
+	""var_type""			""FIELD_INTEGER""
+	""bonus_str""			""4 8 12 16 20""
+}","""modifier_item_steel_shield_str""
 {
 	""Passive""		""1""
 	""IsHidden""		""1""
@@ -61,5 +66,274 @@
 	{
 		""MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK""	""%damage_block""
 		""MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT""	""%bonus_health_regen""
+		""MODIFIER_PROPERTY_STATS_STRENGTH_BONUS""	""%bonus_str""
+	}
+}",""
+"barbed_armor_str","Barbed Armor (STR)","5","armor","defense;attack","component","250,500","""01""
+{
+	""var_type""		""FIELD_INTEGER""
+	""bonus_armor""	""5 9 14 19 24""
+}
+""02""
+{
+	""var_type""			""FIELD_INTEGER""
+	""bonus_damage""	""12 20 28 36 44""
+}
+""03""
+{
+	""var_type""			""FIELD_INTEGER""
+	""bonus_str""			""4 8 12 16 20""
+}","""modifier_item_barbed_armor_str""
+{
+	""Passive""		""1""
+	""IsHidden""		""1""
+	""Attributes"" 	""MODIFIER_ATTRIBUTE_MULTIPLE""
+	""Properties""
+	{
+		""MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS""	""%bonus_armor""
+		""MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE""	""%bonus_damage""
+		""MODIFIER_PROPERTY_STATS_STRENGTH_BONUS""	""%bonus_str""
+	}
+}",""
+"barbed_armor_agi","Barbed Armor (AGI)","5","armor","defense;attack","component","250,500","""01""
+{
+	""var_type""		""FIELD_INTEGER""
+	""bonus_armor""	""5 9 14 19 24""
+}
+""02""
+{
+	""var_type""			""FIELD_INTEGER""
+	""bonus_damage""	""12 20 28 36 44""
+}
+""03""
+{
+	""var_type""			""FIELD_INTEGER""
+	""bonus_agi""			""4 8 12 16 20""
+}","""modifier_item_barbed_armor_agi""
+{
+	""Passive""		""1""
+	""IsHidden""		""1""
+	""Attributes"" 	""MODIFIER_ATTRIBUTE_MULTIPLE""
+	""Properties""
+	{
+		""MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS""	""%bonus_armor""
+		""MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE""	""%bonus_damage""
+		""MODIFIER_PROPERTY_STATS_AGILITY_BONUS""	""%bonus_agi""
+	}
+}",""
+"mystic_amulet_str","Mystic Amulet (STR)","5","magic","mp;evasion;mana","component","250,500","""01""
+{
+	""var_type""		""FIELD_INTEGER""
+	""evasion_pct""	""10 13 16 19 22""
+}
+""02""
+{
+	""var_type""			""FIELD_INTEGER""
+	""bonus_mana""	""80 160 240 320 400""
+}
+""03""
+{
+	""var_type""			""FIELD_INTEGER""
+	""bonus_str""			""4 8 12 16 20""
+}","""modifier_item_mystic_amulet_str""
+{
+	""Passive""		""1""
+	""IsHidden""		""1""
+	""Attributes"" 	""MODIFIER_ATTRIBUTE_MULTIPLE""
+	""Properties""
+	{
+		""MODIFIER_PROPERTY_EVASION_CONSTANT""	""%evasion_pct""
+		""MODIFIER_PROPERTY_MANA_BONUS""	""%bonus_mana""
+		""MODIFIER_PROPERTY_STATS_STRENGTH_BONUS""	""%bonus_str""
+	}
+}",""
+"mystic_amulet_int","Mystic Amulet (INT)","5","magic","mp;evasion;mana","component","250,500","""01""
+{
+	""var_type""		""FIELD_INTEGER""
+	""evasion_pct""	""10 13 16 19 22""
+}
+""02""
+{
+	""var_type""			""FIELD_INTEGER""
+	""bonus_mana""	""80 160 240 320 400""
+}
+""03""
+{
+	""var_type""			""FIELD_INTEGER""
+	""bonus_int""			""4 8 12 16 20""
+}","""modifier_item_mystic_amulet_int""
+{
+	""Passive""		""1""
+	""IsHidden""		""1""
+	""Attributes"" 	""MODIFIER_ATTRIBUTE_MULTIPLE""
+	""Properties""
+	{
+		""MODIFIER_PROPERTY_EVASION_CONSTANT""	""%evasion_pct""
+		""MODIFIER_PROPERTY_MANA_BONUS""	""%bonus_mana""
+		""MODIFIER_PROPERTY_STATS_INTELLECT_BONUS""	""%bonus_int""
+	}
+}",""
+"temporal_skipper_agi","Temporal Skipper (AGI)","5","speed","attack speed;mana regen","component","250,500","""01""
+{
+	""var_type""		""FIELD_INTEGER""
+	""mana_regen_pct""	""60 100 140 180 220""
+}
+""02""
+{
+	""var_type""			""FIELD_INTEGER""
+	""attack_speed""	""20 35 50 65 80""
+}
+""03""
+{
+	""var_type""			""FIELD_INTEGER""
+	""bonus_agi""			""4 8 12 16 20""
+}","""modifier_item_temporal_skipper_agi""
+{
+	""Passive""		""1""
+	""IsHidden""		""1""
+	""Attributes"" 	""MODIFIER_ATTRIBUTE_MULTIPLE""
+	""Properties""
+	{
+		""MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE""	""%mana_regen_pct""
+		""MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT""	""%attack_speed""
+		""MODIFIER_PROPERTY_STATS_AGILITY_BONUS""	""%bonus_agi""
+	}
+}",""
+"temporal_skipper_int","Temporal Skipper (INT)","5","speed","attack speed;mana regen","component","250,500","""01""
+{
+	""var_type""		""FIELD_INTEGER""
+	""mana_regen_pct""	""60 100 140 180 220""
+}
+""02""
+{
+	""var_type""			""FIELD_INTEGER""
+	""attack_speed""	""20 35 50 65 80""
+}
+""03""
+{
+	""var_type""			""FIELD_INTEGER""
+	""bonus_int""			""4 8 12 16 20""
+}","""modifier_item_temporal_skipper_int""
+{
+	""Passive""		""1""
+	""IsHidden""		""1""
+	""Attributes"" 	""MODIFIER_ATTRIBUTE_MULTIPLE""
+	""Properties""
+	{
+		""MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE""	""%mana_regen_pct""
+		""MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT""	""%attack_speed""
+		""MODIFIER_PROPERTY_STATS_INTELLECT_BONUS""	""%bonus_int""
+	}
+}",""
+"rapid_booster_agi","Rapid Booster (AGI)","5","speed","move speed;health;hp","component","250,500","""01""
+{
+	""var_type""		""FIELD_INTEGER""
+	""move_speed""	""40 44 48 52 56""
+}
+""02""
+{
+	""var_type""			""FIELD_INTEGER""
+	""bonus_health""	""100 200 300 400 500""
+}
+""03""
+{
+	""var_type""			""FIELD_INTEGER""
+	""bonus_agi""			""4 8 12 16 20""
+}","""modifier_item_rapid_booster_agi""
+{
+	""Passive""		""1""
+	""IsHidden""		""1""
+	""Attributes"" 	""MODIFIER_ATTRIBUTE_MULTIPLE""
+	""Properties""
+	{
+		""MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE""	""%move_speed""
+		""MODIFIER_PROPERTY_HEALTH_BONUS""	""%bonus_health""
+		""MODIFIER_PROPERTY_STATS_AGILITY_BONUS""	""%bonus_agi""
+	}
+}",""
+"rapid_booster_int","Rapid Booster (INT)","5","speed","move speed;health;hp","component","250,500","""01""
+{
+	""var_type""		""FIELD_INTEGER""
+	""move_speed""	""40 44 48 52 56""
+}
+""02""
+{
+	""var_type""			""FIELD_INTEGER""
+	""bonus_health""	""100 200 300 400 500""
+}
+""03""
+{
+	""var_type""			""FIELD_INTEGER""
+	""bonus_int""			""4 8 12 16 20""
+}","""modifier_item_rapid_booster_int""
+{
+	""Passive""		""1""
+	""IsHidden""		""1""
+	""Attributes"" 	""MODIFIER_ATTRIBUTE_MULTIPLE""
+	""Properties""
+	{
+		""MODIFIER_PROPERTY_MOVESPEED_BONUS_UNIQUE""	""%move_speed""
+		""MODIFIER_PROPERTY_HEALTH_BONUS""	""%bonus_health""
+		""MODIFIER_PROPERTY_STATS_INTELLECT_BONUS""	""%bonus_int""
+	}
+}",""
+"mega_booster","Mega Booster","3","booster","health;mana;hp;mp","component","2000,1000","""01""
+{
+	""var_type""		""FIELD_INTEGER""
+	""bonus_health""	""500 650 800""
+}
+""02""
+{
+	""var_type""			""FIELD_INTEGER""
+	""bonus_mana""	""300 450 600""
+}","""modifier_item_mega_booster""
+{
+	""Passive""		""1""
+	""IsHidden""		""1""
+	""Attributes"" 	""MODIFIER_ATTRIBUTE_MULTIPLE""
+	""Properties""
+	{
+		""MODIFIER_PROPERTY_HEALTH_BONUS""	""%bonus_health""
+		""MODIFIER_PROPERTY_MANA_BONUS""	""%bonus_mana""
+	}
+}",""
+"black_cape","Black Cape","3","regen","hp regen;mana regen","component","2000,1000","""01""
+{
+	""var_type""		""FIELD_INTEGER""
+	""hp_regen""		""10 15 20""
+}
+""02""
+{
+	""var_type""			""FIELD_INTEGER""
+	""mana_regen_pct""		""220 330 440""
+}","""modifier_item_black_cape""
+{
+	""Passive""		""1""
+	""IsHidden""		""1""
+	""Attributes"" 	""MODIFIER_ATTRIBUTE_MULTIPLE""
+	""Properties""
+	{
+		""MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT""	""%hp_regen""
+		""MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE""	""%mana_regen_pct""
+	}
+}",""
+"white_cape","White Cape","3","regen","hp regen;mana regen","component","2000,1000","""01""
+{
+	""var_type""		""FIELD_FLOAT""
+	""hp_regen_pct""	""1.0 1.5 2.0""
+}
+""02""
+{
+	""var_type""		""FIELD_INTEGER""
+	""mana_regen""		""12 18 24""
+}","""modifier_item_black_cape""
+{
+	""Passive""		""1""
+	""IsHidden""		""1""
+	""Attributes"" 	""MODIFIER_ATTRIBUTE_MULTIPLE""
+	""Properties""
+	{
+		""MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE""	""%hp_regen_pct""
+		""MODIFIER_PROPERTY_MANA_REGEN_CONSTANT""		""%mana_regen""
 	}
 }",""

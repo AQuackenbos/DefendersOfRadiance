@@ -87,10 +87,24 @@ while(($data = fgetcsv($file)) !== false)
 				}
 		}
 		
+		if(stripos($identifier,'_str_') !== false
+			|| stripos($identifier,'_agi_') !== false
+			|| stripos($identifier,'_int_') !== false
+			|| stripos($identifier,'_str') == (strlen($identifier) - 4)
+			|| stripos($identifier,'_agi') == (strlen($identifier) - 4)
+			|| stripos($identifier,'_int') == (strlen($identifier) - 4)
+		)
+		{
+			$texture = str_replace(array('_str','_agi','_int'),'',$identifier);
+		}
+		else
+		{
+			$texture = $identifier;
+		}
 		$itemFile	= $itemPath.DS.$identifier.'.txt';
 		$itemText	= str_replace(
-			array('__NAME__','__ID__','__IDENTIFIER__','__COST__','__MAXLEVEL__','__LEVEL__','__TAGS__','__ALIASES__','__QUALITY__','__ABILITY__','__MODIFIERS__','__ADDITIONAL__'),
-			array($name.' Lv '.$currLevel,$id,$identifier,$itemCost,$max,$currLevel,$tags,$aliases,$quality,$ability,$modifiers,$addl),
+			array('__NAME__','__ID__','__TEXTURE__','__IDENTIFIER__','__COST__','__MAXLEVEL__','__LEVEL__','__TAGS__','__ALIASES__','__QUALITY__','__ABILITY__','__MODIFIERS__','__ADDITIONAL__'),
+			array($name.' Lv '.$currLevel,$id,$texture,$identifier,$itemCost,$max,$currLevel,$tags,$aliases,$quality,$ability,$modifiers,$addl),
 			$_ITEM_TEMPLATE);
 		
 		file_put_contents($itemFile,$itemText);
@@ -112,8 +126,8 @@ while(($data = fgetcsv($file)) !== false)
 		
 		$recipeFile	= $itemPath.DS.$identifier.'.txt';
 		$recipeText	= str_replace(
-			array('__NAME__','__ID__','__IDENTIFIER__','__ITEM_IDENTIFIER__','__COST__','__TAGS__','__PREVIOUS_IDENTIFIER__'),
-			array($name.' Lv '.$currLevel,$id,$identifier,$itemIdentifier,$recipeCost,$tags,$previousIdentifier),
+			array('__NAME__','__ID__','__IDENTIFIER__','__TEXTURE__','__ITEM_IDENTIFIER__','__COST__','__TAGS__','__PREVIOUS_IDENTIFIER__'),
+			array($name.' Lv '.$currLevel,$id,$identifier,$texture,$itemIdentifier,$recipeCost,$tags,$previousIdentifier),
 			$_RECIPE_TEMPLATE);
 			
 		file_put_contents($recipeFile,$recipeText);

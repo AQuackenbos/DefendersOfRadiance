@@ -8,7 +8,7 @@
 	//-------------------------------------------------------------------------------------------------------------
 	"Model"							"models/props_gameplay/recipe.mdl"
 	"BaseClass"						"item_datadriven"
-	"AbilityTextureName"			"__ITEM_IDENTIFIER__"
+	"AbilityTextureName"			"__TEXTURE__"
 
 	
 	// Item Info

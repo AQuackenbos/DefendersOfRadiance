@@ -49,8 +49,11 @@
 			"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 			"Properties"
 			{
-				"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_str"
+				"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_agi"
 			}
 		}
 	}
+	
+
+
 }
