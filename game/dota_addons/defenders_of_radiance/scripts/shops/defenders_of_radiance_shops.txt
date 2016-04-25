@@ -2,36 +2,44 @@
 
 "dota_shops"
 {
-	//Stat Items and Actives
+	//STR Starters
 	"consumables"
 	{
 		"item" 		"item_core_strength"
-		"item"		"item_core_agility"
-		"item"		"item_core_intellect"
+		"item"		"item_barbed_armor_str"
+		"item"		"item_mystic_amulet_str"
+		"item"		"item_steel_shield_str"
 	}
 
-	//Offensive Starters
+	//AGI Starters
 	"attributes"
 	{
-	
+		"item"		"item_core_agility"
+		"item"		"item_barbed_armor_agi"
+		"item"		"item_rapid_booster_agi"
+		"item"		"item_temporal_skipper_agi"
 	}
 
-	//Defensive Starters
+	//INT Starters
 	"weapons_armor"
 	{
-		"item"		"item_steel_shield"
+		"item"		"item_core_intellect"
+		"item"		"item_mystic_amulet_int"
+		"item"		"item_rapid_booster_int"
+		"item"		"item_temporal_skipper_int"
 	}
 
-	//Aura Starters
+	//Other+Aura Starters
 	"misc"
 	{
-	
+		"item"		"item_black_cape"
+		"item"		"item_white_cape"
+		"item"		"item_mega_booster"
 	}	
 
 	// Mid Tier Items
 	"basics"
 	{
-   
 	}
 
 	// High Tier Items
